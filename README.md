@@ -1,16 +1,40 @@
-# React + Vite
+# Portfólio — Lucas Asth
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site pessoal em desenvolvimento para apresentar minha formação, experiências e projetos.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- JavaScript
+- CSS
 
-## React Compiler
+## Como executar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instale as dependências e inicie o servidor local:
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+## Estrutura atual
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+O conteúdo das seções do portfólio será incluído nas próximas etapas do projeto.
