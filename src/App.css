@@ -67,6 +67,36 @@
   padding: 72px 0 100px;
 }
 
+.resume-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 34px 0 22px;
+}
+
+.resume-document {
+  padding: 48px 0 72px;
+}
+
+.resume-preview {
+  display: block;
+  width: min(100%, 860px);
+  height: auto;
+  margin: 0 auto;
+  background: var(--color-surface);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+}
+
+.resume-fallback {
+  margin: 16px 0 0;
+  color: var(--color-soft);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.resume-fallback a {
+  color: var(--color-accent-light);
+}
+
 .hero-profile {
   align-self: start;
 }
@@ -301,6 +331,11 @@ footer {
     grid-template-columns: 1fr;
     gap: 42px;
     padding: 56px 0 72px;
+  }
+
+  .resume-toolbar {
+    justify-content: center;
+    padding: 28px 0 18px;
   }
 
   .hero-profile {
