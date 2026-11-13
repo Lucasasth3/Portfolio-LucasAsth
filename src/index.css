@@ -1,12 +1,15 @@
 :root {
-  --color-bg: #222223;
-  --color-surface: #fefefe;
-  --color-accent: #b62a2d;
-  --color-soft: #e6a8a8;
-  --color-accent-light: #d5575e;
-  --color-line: rgba(230, 168, 168, 0.28);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  color-scheme: dark;
+  --color-bg: #110720;
+  --color-surface: #ffffff;
+  --color-accent: #8200da;
+  --color-accent-light: #d9b3ff;
+  --color-soft: #c4b7d3;
+  --color-line: rgba(255, 255, 255, 0.15);
+  --color-panel: #1b0f2b;
+  --color-accent-tint: #29123d;
+  --font-mono: 'IBM Plex Mono', Consolas, 'Courier New', monospace;
+  font-family: Inter, 'Segoe UI', sans-serif;
   color: var(--color-surface);
   background: var(--color-bg);
   font-synthesis: none;
@@ -22,5 +25,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: var(--color-bg);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 4px;
 }

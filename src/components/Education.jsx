@@ -1,16 +1,36 @@
+import { useLanguage } from '../languageContext'
+import { Link } from 'react-router-dom'
+import PortfolioSection from './PortfolioSection'
+import { linkedInProfile } from '../data/profile'
+
+const subjects = [{ en: "Data structures", pt: "Estruturas de dados" }, { en: "Algorithms", pt: "Algoritmos" }, 'Java', 'Python', { en: "Web development", pt: "Desenvolvimento web" }, { en: "Git and GitHub", pt: "Git e GitHub" }]
+
 function Education() {
+  const { language, text } = useLanguage()
   return (
-    <section className="content-section" id="education">
-      <p className="section-number">04</p>
-      <div>
-        <h2>Formação</h2>
-        <article className="education-item">
-          <p className="timeline-period">2025 — previsão de conclusão em 2029</p>
-          <h3>Engenharia de Software</h3>
-          <p>PUC Minas</p>
+    <PortfolioSection id="education">
+      <div className="portfolio-timeline">
+        <article className="portfolio-entry">
+          <h3>{text("Bachelor’s Degree in Software Engineering", "Bacharelado em Engenharia de Software")}</h3>
+          <p className="entry-organization">Pontifícia Universidade Católica de Minas Gerais · PUC Minas</p>
+          <p className="entry-period">{text("2026 – expected 2030", "2026 – previsão de conclusão em 2030")}</p>
+          <ul className="tag-list">
+            {subjects.map((subject) => <li key={subject.en ?? subject}>{subject[language] ?? subject}</li>)}
+          </ul>
+          <Link className="button button-secondary education-record-link" to="/education/grades">
+            {text("View my grades", "Ver minhas notas")} <span aria-hidden="true">&#8594;</span>
+          </Link>
+        </article>
+        <article className="portfolio-entry">
+          <h3>{text("Power BI Fundamentals: Data Analysis and Dashboards", "Curso Básico de Power BI: Análise de Dados e Construção de Dashboards")}</h3>
+          <p className="entry-organization">Easy Consultoria Júnior</p>
+          <p className="entry-period">{text('Issued May 2026', 'Emitido em maio de 2026')}</p>
+          <a className="button button-secondary education-record-link" href={linkedInProfile + 'details/certifications/'} target="_blank" rel="noreferrer">
+            {text('View certifications on LinkedIn', 'Ver certificações no LinkedIn')} <span aria-hidden="true">↗</span>
+          </a>
         </article>
       </div>
-    </section>
+    </PortfolioSection>
   )
 }
 

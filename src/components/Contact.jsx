@@ -1,15 +1,19 @@
+import { useLanguage } from '../languageContext'
+import { socialLinks } from '../data/profile'
+
 function Contact() {
+  const { text } = useLanguage()
   return (
     <section className="content-section contact-section" id="contact">
-      <p className="section-number">06</p>
       <div>
-        <h2>Contato</h2>
-        <p>Estou aberto a conversas sobre estágio, projetos e desenvolvimento web.</p>
+        <h2>{text("Contact", "Contato")}</h2>
+        <p>{text("I’m open to conversations about internships, projects, and web development.", "Estou aberto a conversas sobre estágio, projetos e desenvolvimento web.")}</p>
         <div className="contact-links">
-          <a href="mailto:lucasasth3@outlook.com">E-mail</a>
-          <a href="tel:+5531971019524">Telefone</a>
-          <a href="https://www.linkedin.com/in/lucas-asth/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/Lucasasth3" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:lucasasth3@outlook.com">{text("Email", "E-mail")}</a>
+          <a href="tel:+5531971019524">{text("Phone", "Telefone")}</a>
+          {socialLinks.map(({ label, href }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer">{label}</a>
+          ))}
         </div>
       </div>
     </section>

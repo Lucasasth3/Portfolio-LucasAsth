@@ -1,27 +1,28 @@
+import { useLanguage } from '../languageContext'
+import PortfolioSection from './PortfolioSection'
+
 const skillGroups = [
-  { title: 'Linguagens', items: ['JavaScript', 'Python', 'Java', 'HTML', 'CSS'] },
-  { title: 'Tecnologias', items: ['React', 'Node.js', 'NestJS', 'Django', 'REST'] },
-  { title: 'Dados e ferramentas', items: ['MongoDB', 'SQL', 'Git', 'GitHub', 'Power BI'] },
+  { title: { en: "Languages", pt: "Linguagens" }, items: ['Java', 'JavaScript', 'Python'] },
+  { title: { en: "Web development", pt: "Desenvolvimento web" }, items: ['HTML', 'CSS', 'React', 'Node.js', 'NestJS', 'Django', { en: "REST APIs", pt: "APIs REST" }] },
+  { title: { en: "Data", pt: "Dados" }, items: ['SQL', 'MongoDB', 'Power BI'] },
+  { title: { en: "Tools", pt: "Ferramentas" }, items: ['Git', 'GitHub'] },
 ]
 
 function Skills() {
+  const { language, text } = useLanguage()
   return (
-    <section className="content-section" id="skills">
-      <p className="section-number">02</p>
-      <div>
-        <h2>Habilidades</h2>
-        <div className="skill-groups">
-          {skillGroups.map((group) => (
-            <div className="skill-group" key={group.title}>
-              <h3>{group.title}</h3>
-              <ul>
-                {group.items.map((item) => <li key={item}>{item}</li>)}
-              </ul>
-            </div>
-          ))}
-        </div>
+    <PortfolioSection id="skills" description={text("Technologies I use in coursework and projects", "Tecnologias que uso em estudos e projetos")}>
+      <div className="skill-rows">
+        {skillGroups.map(({ title, items }) => (
+          <div className="skill-row" key={title.en}>
+            <h3>{title[language]}</h3>
+            <ul className="tag-list">
+              {items.map((item) => <li key={item.en ?? item}>{item[language] ?? item}</li>)}
+            </ul>
+          </div>
+        ))}
       </div>
-    </section>
+    </PortfolioSection>
   )
 }
 

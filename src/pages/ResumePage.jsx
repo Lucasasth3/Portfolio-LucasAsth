@@ -1,4 +1,6 @@
+import { useLanguage } from '../languageContext'
 function ResumePage() {
+  const { text } = useLanguage()
   return (
     <>
       <section className="resume-toolbar">
@@ -7,17 +9,17 @@ function ResumePage() {
           href="/curriculo-lucas-asth.pdf"
           download="Lucas_Araujo_Asth_Curriculo.pdf"
         >
-          Baixar currículo PDF
+          {text('Download résumé (PDF, Portuguese)', 'Baixar currículo PDF')}
         </a>
       </section>
-      <section className="resume-document" aria-label="Visualização do currículo">
+      <section className="resume-document" aria-label={text("Résumé preview", "Visualização do currículo")}>
         <img
           className="resume-preview"
           src="/curriculo-lucas-asth.png"
-          alt="Pré-visualização do currículo de Lucas Asth"
+          alt={text("Preview of Lucas Asth’s résumé", "Pré-visualização do currículo de Lucas Asth")}
         />
         <p className="resume-fallback">
-          Para salvar o documento, <a href="/curriculo-lucas-asth.pdf" download="Lucas_Araujo_Asth_Curriculo.pdf">baixe o currículo em PDF</a>.
+          {text("To save a copy, ", "Para salvar o documento, ")}<a href="/curriculo-lucas-asth.pdf" download="Lucas_Araujo_Asth_Curriculo.pdf">{text("download the résumé PDF", "baixe o currículo em PDF")}</a>.
         </p>
       </section>
     </>

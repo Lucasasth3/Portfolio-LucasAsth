@@ -1,0 +1,54 @@
+.github-projects {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-line);
+}
+
+.github-projects-heading,
+.github-repository-list li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 18px;
+}
+
+.github-projects h3,
+.github-projects h4 {
+  margin: 0;
+}
+
+.github-projects a,
+.project-source {
+  color: var(--color-accent-light);
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+
+.github-repository-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.github-repository-list li {
+  padding: 13px 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.github-repository-list p {
+  margin: 4px 0 0;
+}
+
+.github-repository-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--color-soft);
+  font-size: 0.85rem;
+}
+
+.project-source {
+  display: inline-block;
+  margin-top: 14px;
+}
