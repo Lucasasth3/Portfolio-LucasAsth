@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { LanguageContext } from './languageContext'
+import { LanguageContext } from './contextoIdioma'
 const storageKey = 'portfolio-language'
 
 function readLanguage() {

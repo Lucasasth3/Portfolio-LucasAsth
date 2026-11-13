@@ -1,7 +1,7 @@
-import { useLanguage } from '../languageContext'
-import PortfolioSection from './PortfolioSection'
-import GitHubProjects from './GitHubProjects'
-import { repositoryUrl } from '../data/githubProjects'
+import { useLanguage } from '../contextoIdioma'
+import PortfolioSection from './SecaoPortfolio'
+import GitHubProjects from './ProjetosGitHub'
+import { repositoryUrl } from '../data/projetosGitHub'
 
 const projects = [
   {

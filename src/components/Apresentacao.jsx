@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { useLanguage } from '../languageContext'
-import { socialLinks } from '../data/profile'
-import Journey from './Journey'
-import './Journey.css'
+import { useLanguage } from '../contextoIdioma'
+import { socialLinks } from '../data/perfil'
+import Journey from './Jornada'
+import './Jornada.css'
 
 function Hero() {
   const { text } = useLanguage()

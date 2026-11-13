@@ -12,4 +12,11 @@ export const academicRecord = [
       { name: { en: "Interdisciplinary Project: Web Application Development", pt: "Trabalho Interdisciplinar: Desenvolvimento de Aplicações Web" }, classes: 36, absences: 0, attendance: 100, grade: 98 },
     ],
   },
+  { year: 2026, semester: 2, courses: [] },
+  { year: 2027, semester: 1, courses: [] },
+  { year: 2027, semester: 2, courses: [] },
+  { year: 2028, semester: 1, courses: [] },
+  { year: 2028, semester: 2, courses: [] },
+  { year: 2029, semester: 1, courses: [] },
+  { year: 2029, semester: 2, courses: [] },
 ]

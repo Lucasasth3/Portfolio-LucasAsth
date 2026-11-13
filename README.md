@@ -28,13 +28,16 @@ npm run build
 
 ```text
 src/
-├── assets/
-├── components/
-├── data/
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
+|-- assets/               Imagens e outros recursos
+|-- components/           Componentes reutilizáveis
+|-- data/                 Dados do perfil, histórico e jornada
+|-- pages/                Páginas do site
+|-- Aplicacao.jsx          Rotas e estrutura do site
+|-- Aplicacao.css          Estilos compartilhados
+|-- estilos-globais.css    Tema e estilos base
+|-- ProvedorIdioma.jsx     Preferência de idioma
+|-- contextoIdioma.js      Acesso ao idioma nos componentes
+|-- principal.jsx          Entrada do React
 ```
 
 O conteúdo das seções do portfólio será incluído nas próximas etapas do projeto.

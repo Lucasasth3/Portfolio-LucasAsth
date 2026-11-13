@@ -1,4 +1,4 @@
-import { githubProfile } from './githubProjects'
+import { githubProfile } from './projetosGitHub'
 
 export const linkedInProfile = 'https://www.linkedin.com/in/lucas-asth/'
 

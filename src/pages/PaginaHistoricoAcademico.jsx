@@ -1,8 +1,8 @@
-import { useLanguage } from '../languageContext'
+import { useLanguage } from '../contextoIdioma'
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { academicRecord } from '../data/academicRecord'
-import './AcademicRecordPage.css'
+import { academicRecord } from '../data/historicoAcademico'
+import './PaginaHistoricoAcademico.css'
 
 const ordinalSuffix = new Intl.PluralRules('en', { type: 'ordinal' })
 const suffixes = { one: 'st', two: 'nd', few: 'rd', other: 'th' }
@@ -23,8 +23,27 @@ function SemesterCard({ year, semester, courses }) {
   )
   const headingId = 'semester-' + year + '-' + semester
   const gradedCourses = courses.filter(({ grade }) => grade != null)
-  const classes = courses.reduce((total, course) => total + course.classes, 0)
-  const average = gradedCourses.reduce((total, course) => total + course.grade, 0) / gradedCourses.length
+  const recordedClasses = courses.filter(({ classes }) => classes != null)
+  const classes = recordedClasses.reduce((total, course) => total + course.classes, 0)
+  const average = gradedCourses.length
+    ? gradedCourses.reduce((total, course) => total + course.grade, 0) / gradedCourses.length
+    : null
+
+  if (!courses.length) {
+    return (
+      <article className="semester-card semester-card--planned" aria-labelledby={headingId}>
+        <div className="semester-content">
+          <div className="semester-heading">
+            <h2 id={headingId}>{semesterLabel}</h2>
+            <span className="semester-status">{text('Planned', 'Planejado')}</span>
+          </div>
+          <p className="semester-placeholder">
+            {text('Courses and grades will be added here as they become available.', 'As disciplinas e notas serão adicionadas aqui conforme forem registradas.')}
+          </p>
+        </div>
+      </article>
+    )
+  }
 
   return (
     <article className="semester-card" aria-labelledby={headingId}>
@@ -45,9 +64,9 @@ function SemesterCard({ year, semester, courses }) {
               {courses.map(({ name, classes, absences, attendance, grade }) => (
                 <tr key={name.pt}>
                   <th scope="row">{name[language]}</th>
-                  <td>{classes}</td>
-                  <td>{absences}</td>
-                  <td>{attendanceFormat.format(attendance / 100)}</td>
+                  <td>{classes ?? '—'}</td>
+                  <td>{absences ?? '—'}</td>
+                  <td>{attendance == null ? '—' : attendanceFormat.format(attendance / 100)}</td>
                   <td className="semester-grade">{grade == null ? '—' : gradeFormat.format(grade)}</td>
                 </tr>
               ))}
@@ -56,8 +75,8 @@ function SemesterCard({ year, semester, courses }) {
         </div>
       </div>
       <dl className="semester-totals">
-        <div><dt>{text("Total classes", "Total de aulas")}</dt><dd>{classes}</dd></div>
-        <div><dt>{text("Unweighted average", "Média simples")}</dt><dd>{gradedCourses.length ? gradeFormat.format(average) + ' / 100' : '—'}</dd></div>
+        <div><dt>{text("Total classes", "Total de aulas")}</dt><dd>{recordedClasses.length ? classes : '—'}</dd></div>
+        <div><dt>{text("Unweighted average", "Média simples")}</dt><dd>{average != null ? gradeFormat.format(average) + ' / 100' : '—'}</dd></div>
       </dl>
     </article>
   )
@@ -66,8 +85,7 @@ function SemesterCard({ year, semester, courses }) {
 export default function AcademicRecordPage() {
   const { text } = useLanguage()
   const title = useRef(null)
-  const courses = academicRecord.flatMap((semester) => semester.courses)
-  const gradeCount = courses.filter(({ grade }) => grade != null).length
+  const periodsWithGrades = academicRecord.filter(({ courses }) => courses.some(({ grade }) => grade != null)).length
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -84,10 +102,10 @@ export default function AcademicRecordPage() {
 
       <div className="academic-progress">
         <div className="academic-progress-label">
-          <label htmlFor="grades-progress">{text("Grades in this record", "Notas no histórico exibido")}</label>
-          <span>{text(gradeCount + ' of ' + courses.length + ' courses', gradeCount + ' de ' + courses.length + ' disciplinas')}</span>
+          <label htmlFor="grades-progress">{text("Semesters with grades", "Períodos com notas")}</label>
+          <span>{text(periodsWithGrades + ' of ' + academicRecord.length, periodsWithGrades + ' de ' + academicRecord.length)}</span>
         </div>
-        <progress id="grades-progress" value={gradeCount} max={courses.length} />
+        <progress id="grades-progress" value={periodsWithGrades} max={academicRecord.length} />
       </div>
 
       <div className="semester-grid">

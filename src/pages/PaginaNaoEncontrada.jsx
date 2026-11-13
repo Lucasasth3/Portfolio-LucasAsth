@@ -1,4 +1,4 @@
-import { useLanguage } from '../languageContext'
+import { useLanguage } from '../contextoIdioma'
 import { Link } from 'react-router-dom'
 
 function NotFoundPage() {

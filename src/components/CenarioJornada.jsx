@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useImperativeHandle, useLayoutEffect, useRef } from 'react'
 
 const width = 160
 const height = 100
@@ -34,18 +34,18 @@ function drawWindow(rect, x, y, sky) {
   rect(x - 4, y + 31, 50, 3, '#a17c90')
 }
 
-function drawScene(context, scene, reacting) {
+function drawRoom(context, scene) {
   const rect = (x, y, w, h, color) => {
     context.fillStyle = color
     context.fillRect(x, y, w, h)
   }
   const palettes = [
-    ['#75465c', '#a86874', '#52334e', '#e1a456'],
-    ['#33264f', '#554074', '#25213d', '#a684f5'],
-    ['#423052', '#68506f', '#322440', '#65c6a9'],
-    ['#553953', '#83566b', '#39253f', '#d5a5ff'],
+    ['#75465c', '#a86874', '#52334e'],
+    ['#33264f', '#554074', '#25213d'],
+    ['#423052', '#68506f', '#322440'],
+    ['#553953', '#83566b', '#39253f'],
   ]
-  const [wall, trim, floor, shirt] = palettes[scene]
+  const [wall, trim, floor] = palettes[scene]
   rect(0, 0, width, height, wall)
   rect(0, 55, width, 11, trim)
   rect(0, 65, width, 3, '#24182d')
@@ -91,21 +91,69 @@ function drawScene(context, scene, reacting) {
     rect(134, 61, 7, 4, '#88b6a2')
   }
 
-  drawLucas(rect, scene === 0 ? 74 : 89, 43, shirt, reacting)
-  if (reacting) {
-    const x = scene === 0 ? 91 : 106
-    rect(x, 37, 1, 7, '#fff0b4')
-    rect(x - 3, 40, 7, 1, '#fff0b4')
+  if (scene >= 2) {
+    const x = scene === 2 ? 105 : 125
+    rect(x - 10, 61, 20, 7, '#b8879e')
+    rect(x - 8, 68, 3, 12, '#26192e')
+    rect(x + 5, 68, 3, 12, '#26192e')
+    rect(x - 6, 53, 12, 7, '#1e1a32')
+    rect(x - 4, 54, 8, 5, scene === 2 ? '#ffc8a5' : '#c4a5ff')
+    rect(x - 2, 56, 4, 1, '#62496c')
   }
+
+
 }
 
-export default function JourneyStage({ scene, reacting }) {
+const shirts = ['#e1a456', '#a684f5', '#65c6a9', '#d5a5ff']
+
+export default function JourneyStage({ ref, scene, targetX, exit }) {
   const canvas = useRef(null)
+  const background = useRef(null)
+  const facing = useRef(1)
+
+  function paint(position, isRevealed, direction = 0, walking = false) {
+    const context = canvas.current?.getContext('2d')
+    if (!context || !background.current) return
+    const rect = (x, y, w, h, color) => {
+      context.fillStyle = color
+      context.fillRect(x, y, w, h)
+    }
+    context.drawImage(background.current, 0, 0)
+    if (exit) {
+      rect(exit.x - 6, 58, 12, 25, '#20152b')
+      rect(exit.x - 5, 59, 10, 23, isRevealed ? '#8462b2' : '#40334c')
+      rect(exit.x + 2, 70, 2, 2, isRevealed ? '#fff0b4' : '#746482')
+      if (isRevealed) rect(exit.x - 6, 83, 12, 2, '#d9b3ff')
+    }
+    if (!isRevealed) {
+      rect(targetX - 4, 71, 9, 11, '#321f3b')
+      rect(targetX - 1, 72, 3, 5, '#ffd68b')
+      rect(targetX - 1, 79, 3, 2, '#ffd68b')
+      rect(targetX - 5, 86, 11, 2, '#ffd68b')
+    }
+    if (direction) facing.current = direction
+    const x = Math.round(position.x)
+    const y = Math.round(position.y) - 42
+    const stride = walking ? Math.floor((position.x + position.y) / 3) % 2 : 0
+    context.save()
+    context.translate(x, 0)
+    context.scale(facing.current, 1)
+    drawLucas(rect, 0, y - stride, shirts[scene], false)
+    context.restore()
+  }
 
   useLayoutEffect(() => {
-    const context = canvas.current?.getContext('2d')
-    if (context) drawScene(context, scene, reacting)
-  }, [scene, reacting])
+    if (!background.current) {
+      background.current = document.createElement('canvas')
+      background.current.width = width
+      background.current.height = height
+    }
+    const context = background.current.getContext('2d')
+    if (context) drawRoom(context, scene)
+    facing.current = 1
+  }, [scene])
+
+  useImperativeHandle(ref, () => ({ paint }))
 
   return (
     <div className="journey-stage" aria-hidden="true">

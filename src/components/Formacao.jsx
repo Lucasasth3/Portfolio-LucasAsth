@@ -1,7 +1,7 @@
-import { useLanguage } from '../languageContext'
+import { useLanguage } from '../contextoIdioma'
 import { Link } from 'react-router-dom'
-import PortfolioSection from './PortfolioSection'
-import { linkedInProfile } from '../data/profile'
+import PortfolioSection from './SecaoPortfolio'
+import { linkedInProfile } from '../data/perfil'
 
 const subjects = [{ en: "Data structures", pt: "Estruturas de dados" }, { en: "Algorithms", pt: "Algoritmos" }, 'Java', 'Python', { en: "Web development", pt: "Desenvolvimento web" }, { en: "Git and GitHub", pt: "Git e GitHub" }]
 

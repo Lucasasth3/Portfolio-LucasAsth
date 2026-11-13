@@ -1,5 +1,5 @@
-import { useLanguage } from '../languageContext'
-import PortfolioSection from './PortfolioSection'
+import { useLanguage } from '../contextoIdioma'
+import PortfolioSection from './SecaoPortfolio'
 
 const experiences = [
   {

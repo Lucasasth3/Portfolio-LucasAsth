@@ -1,4 +1,4 @@
-import { useLanguage } from '../languageContext'
+import { useLanguage } from '../contextoIdioma'
 import { NavLink } from 'react-router-dom'
 
 const navigation = [

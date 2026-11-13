@@ -1,16 +1,17 @@
-import { LanguageProvider } from './language'
-import { useLanguage } from './languageContext'
+import { LanguageProvider } from './ProvedorIdioma'
+import { useLanguage } from './contextoIdioma'
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Header from './components/Header'
-import AcademicRecordPage from './pages/AcademicRecordPage'
-import ContactPage from './pages/ContactPage'
-import EducationPage from './pages/EducationPage'
-import ExperiencePage from './pages/ExperiencePage'
-import HomePage from './pages/HomePage'
-import NotFoundPage from './pages/NotFoundPage'
-import ProjectsPage from './pages/ProjectsPage'
-import ResumePage from './pages/ResumePage'
+import './Aplicacao.css'
+import Header from './components/Cabecalho'
+import Skills from './components/Habilidades'
+import AcademicRecordPage from './pages/PaginaHistoricoAcademico'
+import ContactPage from './pages/PaginaContato'
+import EducationPage from './pages/PaginaFormacao'
+import ExperiencePage from './pages/PaginaExperiencia'
+import HomePage from './pages/PaginaInicial'
+import NotFoundPage from './pages/PaginaNaoEncontrada'
+import ProjectsPage from './pages/PaginaProjetos'
+import ResumePage from './pages/PaginaCurriculo'
 
 function Portfolio() {
   const { text } = useLanguage()
@@ -22,6 +23,7 @@ function Portfolio() {
           <Route path="/" element={<HomePage />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/education" element={<EducationPage />} />
           <Route path="/education/grades" element={<AcademicRecordPage />} />

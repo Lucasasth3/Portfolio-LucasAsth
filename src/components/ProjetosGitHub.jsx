@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { useLanguage } from '../languageContext'
-import { demoUrl, fetchRepositories, githubProfile, repositorySnapshot, repositoryUrl } from '../data/githubProjects'
-import './GitHubProjects.css'
+import { useLanguage } from '../contextoIdioma'
+import { demoUrl, fetchRepositories, githubProfile, repositorySnapshot, repositoryUrl } from '../data/projetosGitHub'
+import './ProjetosGitHub.css'
 
 const projectLabels = {
   'finance-saas': {

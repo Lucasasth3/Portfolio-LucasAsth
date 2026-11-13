@@ -1,5 +1,5 @@
-import { useLanguage } from '../languageContext'
-import { homeSections } from '../data/profile'
+import { useLanguage } from '../contextoIdioma'
+import { homeSections } from '../data/perfil'
 
 export default function PortfolioSection({ id, description, children }) {
   const { language } = useLanguage()

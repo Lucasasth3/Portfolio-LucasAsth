@@ -1,4 +1,4 @@
-import { useLanguage } from '../languageContext'
+import { useLanguage } from '../contextoIdioma'
 function ResumePage() {
   const { text } = useLanguage()
   return (
