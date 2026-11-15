@@ -84,7 +84,7 @@ export default function HomePage() {
             <div className="home-timeline-card">
               <strong>PUC Minas</strong>
               <span>{text('Software Engineering', 'Engenharia de Software')}</span>
-              <small>{text('2025 — Present', '2025 — Presente')}</small>
+              <small>{text('2025 — Dec 2029', '2025 — Dez 2029')}</small>
             </div>
           </article>
 
@@ -92,8 +92,8 @@ export default function HomePage() {
             <h3>{text('Experience', 'Experiência')}</h3>
             <div className="home-timeline-card">
               <strong>Axel Mendes</strong>
-              <span>{text('Software development and digital solutions', 'Desenvolvimento de software e soluções digitais')}</span>
-              <small>{text('Professional experience', 'Experiência profissional')}</small>
+              <span>{text('Sales, entrepreneurship, web development, APIs and WhatsApp messaging automation', 'Vendas, empreendedorismo, desenvolvimento web, APIs e disparos com WhatsApp')}</span>
+              <small>{text('2025 — Present', '2025 — Presente')}</small>
             </div>
             <div className="home-timeline-card">
               <strong>{text('Freelance projects', 'Projetos freelance')}</strong>
@@ -107,6 +107,18 @@ export default function HomePage() {
           <div className="home-achievement-card"><strong>7+</strong><span>{text('projects explored', 'projetos explorados')}</span></div>
           <div className="home-achievement-card"><strong>02</strong><span>{text('certificates', 'certificados')}</span></div>
           <div className="home-achievement-card"><strong>01</strong><span>{text('entrepreneurial mindset', 'mentalidade empreendedora')}</span></div>
+        </div>
+      </section>
+
+      <section className="home-music" id="music" aria-labelledby="music-title">
+        <div className="home-music-copy">
+          <p className="home-space-kicker">03 / {text('A little music', 'Um pouco de música')}</p>
+          <h2 id="music-title">{text('Music for ideas. Ideas for software.', 'Música para ideias. Ideias para software.')}</h2>
+          <p>{text('Music follows me while I study, build products and turn new ideas into something real. This is a small window into what I listen to while creating.', 'A música me acompanha enquanto estudo, construo produtos e transformo novas ideias em algo real. Esta é uma pequena janela para o que escuto enquanto crio.')}</p>
+          <a className="home-space-button home-space-button-secondary" href="https://open.spotify.com" target="_blank" rel="noreferrer">{text('Open my Spotify', 'Abrir meu Spotify')} <span aria-hidden="true">↗</span></a>
+        </div>
+        <div className="home-music-player">
+          <iframe title={text('Lucas playlist on Spotify', 'Playlist do Lucas no Spotify')} src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
         </div>
       </section>
 

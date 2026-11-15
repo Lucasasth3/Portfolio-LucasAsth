@@ -257,6 +257,23 @@
 .home-achievement-card strong { color: var(--color-surface); font-size: clamp(2.4rem, 5vw, 4rem); line-height: .9; }
 .home-achievement-card span { color: var(--color-soft); font: .72rem var(--font-mono); text-transform: uppercase; }
 
+.home-music {
+  display: grid;
+  grid-template-columns: minmax(260px, .75fr) minmax(0, 1.25fr);
+  gap: clamp(28px, 6vw, 70px);
+  align-items: center;
+  max-width: 1050px;
+  margin-inline: auto;
+  padding: 48px;
+  border: 1px solid rgba(213, 87, 94, .45);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(66, 36, 38, .7), rgba(34, 34, 35, .7));
+}
+.home-music-copy h2 { margin: 0; color: var(--color-surface); font-size: clamp(2.3rem, 4vw, 4.5rem); line-height: .94; letter-spacing: -.07em; }
+.home-music-copy p:not(.home-space-kicker) { max-width: 430px; margin: 22px 0; color: var(--color-soft); line-height: 1.65; }
+.home-music-player { overflow: hidden; min-height: 352px; border: 8px solid #171718; border-radius: 15px; background: #171718; box-shadow: 0 18px 40px rgba(0,0,0,.25); }
+.home-music-player iframe { display: block; width: 100%; min-height: 352px; border: 0; }
+
 @media (max-width: 850px) {
   .home-about { grid-template-columns: minmax(170px, .75fr) minmax(220px, .85fr); }
   .home-about-copy { grid-column: 1 / -1; }
@@ -279,4 +296,7 @@
   .home-journey { padding-top: 70px; }
   .home-journey-grid,
   .home-achievement-grid { grid-template-columns: 1fr; }
+  .home-music { grid-template-columns: 1fr; padding: 28px; }
+  .home-music-player,
+  .home-music-player iframe { min-height: 300px; }
 }
