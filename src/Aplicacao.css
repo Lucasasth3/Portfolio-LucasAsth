@@ -10,9 +10,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  min-height: 64px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--color-line);
+  width: min(920px, 100%);
+  min-height: 58px;
+  margin: 16px auto 0;
+  padding: 8px 14px 8px 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: rgba(43, 37, 38, .78);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .22);
+  backdrop-filter: blur(12px);
 }
 
 .site-header nav,
