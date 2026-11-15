@@ -26,6 +26,7 @@ export default function Journey() {
   const { language, text } = useLanguage()
   const [level, setLevel] = useState(0)
   const [visited, setVisited] = useState([])
+  const [detailsExpanded, setDetailsExpanded] = useState(true)
   const stage = useRef(null)
   const viewport = useRef(null)
   const position = useRef({ ...start })
@@ -65,12 +66,14 @@ export default function Journey() {
     discovered.current = visited.includes(index)
     if (index === level) stage.current?.paint(start, discovered.current)
     setLevel(index)
+    setDetailsExpanded(false)
     viewport.current?.focus({ preventScroll: true })
   }
 
   function reveal() {
     if (discovered.current) return
     discovered.current = true
+    setDetailsExpanded(true)
     setVisited(previous => previous.includes(level) ? previous : [...previous, level])
     stage.current?.paint(position.current, true)
   }
@@ -216,24 +219,30 @@ export default function Journey() {
           <article className="journey-dialogue-panel" aria-labelledby="journey-story-title">
             <p className="journey-speaker">{chapter.category[language]}</p>
             <h2 id="journey-story-title">{chapter.title[language]}</h2>
-            <p>{chapter.story[language]}</p>
-            {chapter.tags && (
-              <ul className="tag-list journey-highlights">
-                {chapter.tags.map(tag => <li key={tag.en ?? tag}>{tag[language] ?? tag}</li>)}
-              </ul>
-            )}
-            {chapter.items && (
-              <dl className="journey-highlights journey-facts">
-                {chapter.items.map(item => (
-                  <div key={item.title.en}><dt>{item.title[language]}</dt><dd>{item.detail[language]}</dd></div>
-                ))}
-              </dl>
-            )}
-            {chapter.links && (
-              <div className="journey-links">
-                {chapter.links.map(link => <Link key={link.to} className="button button-secondary" to={link.to}>{link.label[language]}</Link>)}
-              </div>
-            )}
+            <button type="button" className="journey-details-toggle" aria-expanded={detailsExpanded}
+              aria-controls="journey-story-details" onClick={() => setDetailsExpanded(value => !value)}>
+              {detailsExpanded ? text('Hide details', 'Ocultar detalhes') : text('Read details', 'Ler detalhes')}
+            </button>
+            {detailsExpanded && <div id="journey-story-details" className="journey-story-details">
+              <p>{chapter.story[language]}</p>
+              {chapter.tags && (
+                <ul className="tag-list journey-highlights">
+                  {chapter.tags.map(tag => <li key={tag.en ?? tag}>{tag[language] ?? tag}</li>)}
+                </ul>
+              )}
+              {chapter.items && (
+                <dl className="journey-highlights journey-facts">
+                  {chapter.items.map(item => (
+                    <div key={item.title.en}><dt>{item.title[language]}</dt><dd>{item.detail[language]}</dd></div>
+                  ))}
+                </dl>
+              )}
+              {chapter.links && (
+                <div className="journey-links">
+                  {chapter.links.map(link => <Link key={link.to} className="button button-secondary" to={link.to}>{link.label[language]}</Link>)}
+                </div>
+              )}
+            </div>}
           </article>
         )}
       </div>
