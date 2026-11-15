@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contextoIdioma'
-import { githubProfile } from '../data/projetosGitHub'
+import { githubProfile, repositorySnapshot, repositoryUrl } from '../data/projetosGitHub'
 import { linkedInProfile } from '../data/perfil'
 import './PaginaInicial.css'
 
@@ -64,6 +64,46 @@ export default function HomePage() {
           <p>{text('I am a Software Engineering student at PUC Minas with practical experience building web applications, REST APIs and data solutions. My path started with entrepreneurship: I learned by testing ideas, talking to people and turning small opportunities into something real.', 'Sou estudante de Engenharia de Software na PUC Minas, com experiência prática construindo aplicações web, APIs REST e soluções com dados. Minha trajetória começou pelo empreendedorismo: aprendi testando ideias, conversando com pessoas e transformando pequenas oportunidades em algo real.')}</p>
           <p>{text('Today I combine that business curiosity with software engineering. I like understanding the reason behind a product, organizing the work and building a first version that can be improved with feedback.', 'Hoje uno essa curiosidade de negócio à engenharia de software. Gosto de entender o motivo por trás de um produto, organizar o trabalho e construir uma primeira versão que possa evoluir com feedback.')}</p>
           <Link className="home-space-button home-space-button-secondary" to="/experience">{text('See my experience', 'Ver minha experiência')} <span aria-hidden="true">↗</span></Link>
+        </div>
+      </section>
+
+      <section className="home-journey" id="journey" aria-labelledby="journey-title">
+        <div className="home-section-heading">
+          <p className="home-space-kicker">02 / {text('Education and achievements', 'Formação e conquistas')}</p>
+          <h2 id="journey-title">{text('The work behind the ideas.', 'O trabalho por trás das ideias.')}</h2>
+        </div>
+
+        <div className="home-journey-grid">
+          <article className="home-journey-column">
+            <h3>{text('Education', 'Educação')}</h3>
+            <div className="home-timeline-card">
+              <strong>PUC Minas</strong>
+              <span>{text('Software Engineering', 'Engenharia de Software')}</span>
+              <small>{text('2025 — Present', '2025 — Presente')}</small>
+            </div>
+            <div className="home-timeline-card">
+              <strong>{text('Continuous learning', 'Aprendizado contínuo')}</strong>
+              <span>{text('Web development, APIs, databases and product thinking', 'Desenvolvimento web, APIs, bancos de dados e visão de produto')}</span>
+              <small>{text('Projects and studies', 'Projetos e estudos')}</small>
+            </div>
+          </article>
+
+          <article className="home-journey-column">
+            <h3>{text('Projects', 'Projetos')}</h3>
+            {repositorySnapshot.slice(0, 3).map((repository) => (
+              <a className="home-timeline-card home-timeline-link" href={repositoryUrl(repository.name)} target="_blank" rel="noreferrer" key={repository.name}>
+                <strong>{repository.name}</strong>
+                <span>{repository.description || text('Web project and technical practice', 'Projeto web e prática técnica')}</span>
+                <small>{repository.language || text('Multiple technologies', 'Tecnologias diversas')} ↗</small>
+              </a>
+            ))}
+          </article>
+        </div>
+
+        <div className="home-achievement-grid">
+          <div className="home-achievement-card"><strong>{repositorySnapshot.length}+</strong><span>{text('projects explored', 'projetos explorados')}</span></div>
+          <div className="home-achievement-card"><strong>02</strong><span>{text('certificates to add', 'certificados para adicionar')}</span></div>
+          <div className="home-achievement-card"><strong>01</strong><span>{text('entrepreneurial mindset', 'mentalidade empreendedora')}</span></div>
         </div>
       </section>
 

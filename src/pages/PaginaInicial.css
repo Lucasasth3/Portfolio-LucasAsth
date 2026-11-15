@@ -234,6 +234,29 @@
 .home-about-copy { color: var(--color-soft); line-height: 1.7; }
 .home-about-copy p { margin: 0 0 18px; }
 
+.home-journey {
+  max-width: 1050px;
+  margin-inline: auto;
+  padding: 100px 0 120px;
+  border-top: 1px solid var(--color-line);
+  scroll-margin-top: 30px;
+}
+
+.home-section-heading { max-width: 720px; }
+.home-section-heading h2 { margin: 0; color: var(--color-surface); font-size: clamp(2.4rem, 5vw, 5rem); line-height: .94; letter-spacing: -.07em; }
+.home-journey-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 48px; }
+.home-journey-column h3 { margin: 0 0 16px; color: var(--color-surface); font-size: 1.2rem; }
+.home-timeline-card { display: flex; flex-direction: column; gap: 6px; padding: 20px; margin-bottom: 12px; border: 1px solid var(--color-line); border-radius: 8px; background: rgba(255,255,255,.03); }
+.home-timeline-card strong { color: var(--color-surface); font-size: 1.05rem; }
+.home-timeline-card span { color: var(--color-soft); line-height: 1.45; }
+.home-timeline-card small { color: var(--color-accent-light); font: .72rem var(--font-mono); }
+.home-timeline-link { text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
+.home-timeline-link:hover { border-color: var(--color-accent-light); transform: translateY(-3px); }
+.home-achievement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+.home-achievement-card { min-height: 130px; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; border: 1px solid var(--color-accent-light); border-radius: 8px; background: var(--color-accent-tint); }
+.home-achievement-card strong { color: var(--color-surface); font-size: clamp(2.4rem, 5vw, 4rem); line-height: .9; }
+.home-achievement-card span { color: var(--color-soft); font: .72rem var(--font-mono); text-transform: uppercase; }
+
 @media (max-width: 850px) {
   .home-about { grid-template-columns: minmax(170px, .75fr) minmax(220px, .85fr); }
   .home-about-copy { grid-column: 1 / -1; }
@@ -253,4 +276,7 @@
   .home-space-note { padding-top: 60px; }
   .home-about { grid-template-columns: 1fr; padding-top: 70px; }
   .home-about-visual { max-width: 300px; margin-inline: auto; }
+  .home-journey { padding-top: 70px; }
+  .home-journey-grid,
+  .home-achievement-grid { grid-template-columns: 1fr; }
 }
