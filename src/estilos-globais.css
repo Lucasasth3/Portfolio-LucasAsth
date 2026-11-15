@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --color-bg: #110720;
+  --color-bg: #222223;
   --color-surface: #ffffff;
-  --color-accent: #8200da;
-  --color-accent-light: #d9b3ff;
-  --color-soft: #c4b7d3;
+  --color-accent: #b62a2d;
+  --color-accent-light: #d5575e;
+  --color-soft: #e6a8a8;
   --color-line: rgba(255, 255, 255, 0.15);
-  --color-panel: #1b0f2b;
-  --color-accent-tint: #29123d;
+  --color-panel: #2b2526;
+  --color-accent-tint: #422426;
   --font-mono: 'IBM Plex Mono', Consolas, 'Courier New', monospace;
   font-family: Inter, 'Segoe UI', sans-serif;
   color: var(--color-surface);
