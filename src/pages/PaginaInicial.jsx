@@ -47,9 +47,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-space-note" id="about" aria-labelledby="about-title">
+      <section className="home-about" id="about" aria-labelledby="about-title">
+        <div className="home-about-heading">
+          <p className="home-space-kicker">01 / {text('About me', 'Sobre mim')}</p>
+          <h2 id="about-title">{text('Hi, I’m Lucas.', 'Oi, eu sou o Lucas.')}</h2>
+          <p className="home-about-signature">{text('Software Engineer in training · Entrepreneur at heart', 'Software Engineer em formação · Empreendedor por natureza')}</p>
+        </div>
+
+        <div className="home-about-visual" tabIndex="0" aria-label={text('Hover to see the illustrated version', 'Passe o mouse para ver a versão ilustrada')}>
+          <div className="home-about-image home-about-image-photo"><span>{text('Your professional photo', 'Sua foto profissional')}</span></div>
+          <div className="home-about-image home-about-image-drawing" aria-hidden="true"><span>{text('Illustrated version', 'Versão ilustrada')}</span></div>
+          <span className="home-about-hint">{text('Hover me', 'Passe o mouse')}</span>
+        </div>
+
+        <div className="home-about-copy">
+          <p>{text('I am a Software Engineering student at PUC Minas with practical experience building web applications, REST APIs and data solutions. My path started with entrepreneurship: I learned by testing ideas, talking to people and turning small opportunities into something real.', 'Sou estudante de Engenharia de Software na PUC Minas, com experiência prática construindo aplicações web, APIs REST e soluções com dados. Minha trajetória começou pelo empreendedorismo: aprendi testando ideias, conversando com pessoas e transformando pequenas oportunidades em algo real.')}</p>
+          <p>{text('Today I combine that business curiosity with software engineering. I like understanding the reason behind a product, organizing the work and building a first version that can be improved with feedback.', 'Hoje uno essa curiosidade de negócio à engenharia de software. Gosto de entender o motivo por trás de um produto, organizar o trabalho e construir uma primeira versão que possa evoluir com feedback.')}</p>
+          <Link className="home-space-button home-space-button-secondary" to="/experience">{text('See my experience', 'Ver minha experiência')} <span aria-hidden="true">↗</span></Link>
+        </div>
+      </section>
+
+      <section className="home-space-note" id="principles" aria-labelledby="principles-title">
         <p className="home-space-kicker">01 / {text('About the builder', 'Sobre quem constrói')}</p>
-        <h2 id="about-title">{text('I like the beginning of things: the question, the sketch and the first working version.', 'Gosto do começo das coisas: da pergunta, do rascunho e da primeira versão funcionando.')}</h2>
+        <h2 id="principles-title">{text('I like the beginning of things: the question, the sketch and the first working version.', 'Gosto do começo das coisas: da pergunta, do rascunho e da primeira versão funcionando.')}</h2>
       </section>
     </main>
   )
