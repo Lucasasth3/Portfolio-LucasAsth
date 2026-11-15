@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contextoIdioma'
-import { githubProfile, repositorySnapshot, repositoryUrl } from '../data/projetosGitHub'
+import { githubProfile, repositorySnapshot } from '../data/projetosGitHub'
 import { linkedInProfile } from '../data/perfil'
 import './PaginaInicial.css'
 
@@ -77,32 +77,35 @@ export default function HomePage() {
           <article className="home-journey-column">
             <h3>{text('Education', 'Educação')}</h3>
             <div className="home-timeline-card">
+              <strong>Colégio Marista Dom Silvério</strong>
+              <span>{text('Early education through high school', 'Da educação infantil ao ensino médio')}</span>
+              <small>{text('2010 — 2024', '2010 — 2024')}</small>
+            </div>
+            <div className="home-timeline-card">
               <strong>PUC Minas</strong>
               <span>{text('Software Engineering', 'Engenharia de Software')}</span>
               <small>{text('2025 — Present', '2025 — Presente')}</small>
             </div>
-            <div className="home-timeline-card">
-              <strong>{text('Continuous learning', 'Aprendizado contínuo')}</strong>
-              <span>{text('Web development, APIs, databases and product thinking', 'Desenvolvimento web, APIs, bancos de dados e visão de produto')}</span>
-              <small>{text('Projects and studies', 'Projetos e estudos')}</small>
-            </div>
           </article>
 
           <article className="home-journey-column">
-            <h3>{text('Projects', 'Projetos')}</h3>
-            {repositorySnapshot.slice(0, 3).map((repository) => (
-              <a className="home-timeline-card home-timeline-link" href={repositoryUrl(repository.name)} target="_blank" rel="noreferrer" key={repository.name}>
-                <strong>{repository.name}</strong>
-                <span>{repository.description || text('Web project and technical practice', 'Projeto web e prática técnica')}</span>
-                <small>{repository.language || text('Multiple technologies', 'Tecnologias diversas')} ↗</small>
-              </a>
-            ))}
+            <h3>{text('Experience', 'Experiência')}</h3>
+            <div className="home-timeline-card">
+              <strong>Axel Mendes</strong>
+              <span>{text('Software development and digital solutions', 'Desenvolvimento de software e soluções digitais')}</span>
+              <small>{text('Professional experience', 'Experiência profissional')}</small>
+            </div>
+            <div className="home-timeline-card">
+              <strong>{text('Freelance projects', 'Projetos freelance')}</strong>
+              <span>{text('Websites, APIs and automation for local businesses', 'Sites, APIs e automações para comércios locais')}</span>
+              <small>{text('Ongoing', 'Em andamento')}</small>
+            </div>
           </article>
         </div>
 
         <div className="home-achievement-grid">
-          <div className="home-achievement-card"><strong>{repositorySnapshot.length}+</strong><span>{text('projects explored', 'projetos explorados')}</span></div>
-          <div className="home-achievement-card"><strong>02</strong><span>{text('certificates to add', 'certificados para adicionar')}</span></div>
+          <div className="home-achievement-card"><strong>7+</strong><span>{text('projects explored', 'projetos explorados')}</span></div>
+          <div className="home-achievement-card"><strong>02</strong><span>{text('certificates', 'certificados')}</span></div>
           <div className="home-achievement-card"><strong>01</strong><span>{text('entrepreneurial mindset', 'mentalidade empreendedora')}</span></div>
         </div>
       </section>
