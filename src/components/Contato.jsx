@@ -11,6 +11,10 @@ const callDuration = 2400
 function Contact() {
   const { text } = useLanguage()
   const [ready, setReady] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+  const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState('')
+  const [comments, setComments] = useState(() => JSON.parse(window.localStorage.getItem('portfolio-comments') || '[]'))
 
   useEffect(() => {
     if (ready) return
@@ -18,17 +22,43 @@ function Contact() {
     return () => window.clearTimeout(timer)
   }, [ready])
 
-  function openEmail(event) {
+  async function openEmail(event) {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
-    const subject = encodeURIComponent(data.get('subject').trim())
-    const body = encodeURIComponent([
-      data.get('message').trim(),
-      '',
-      text('Full name: ', 'Nome completo: ') + data.get('name').trim(),
-      text('Email: ', 'E-mail: ') + data.get('email').trim(),
-    ].join('\r\n'))
-    window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body
+    const endpoint = import.meta.env.VITE_CONTACT_ENDPOINT
+    if (!endpoint) {
+      setSendError(text('Contact sending is not configured yet.', 'O envio direto ainda não foi configurado.'))
+      return
+    }
+    setSending(true)
+    setSendError('')
+    try {
+      const response = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      if (!response.ok) throw new Error('send failed')
+      setSent(true)
+      event.currentTarget.reset()
+    } catch {
+      setSendError(text('Could not send the message. Please try again.', 'Não foi possível enviar a mensagem. Tente novamente.'))
+    } finally {
+      setSending(false)
+    }
+  }
+
+  function addComment(event) {
+    event.preventDefault()
+    const data = new FormData(event.currentTarget)
+    const file = data.get('comment-photo')
+    if (!file || !file.size || !file.type.startsWith('image/')) return
+    if (file.size > 5 * 1024 * 1024) return
+    const reader = new FileReader()
+    reader.onload = () => {
+      const comment = { name: data.get('comment-name').trim(), message: data.get('comment-message').trim(), photo: reader.result }
+      const next = [comment, ...comments].slice(0, 12)
+      setComments(next)
+      window.localStorage.setItem('portfolio-comments', JSON.stringify(next))
+      event.currentTarget.reset()
+    }
+    reader.readAsDataURL(file)
   }
 
   return (
@@ -57,7 +87,16 @@ function Contact() {
 
       {ready && (
         <div className="contact-details">
-          <form className="contact-form" onSubmit={openEmail} aria-labelledby="contact-form-title">
+          <aside className="contact-info-panel" aria-label={text('Contact details', 'Detalhes de contato')}>
+            <div className="contact-availability"><i aria-hidden="true" />{text('Open to work and collaborations', 'Aberto a trabalho e colaborações')}</div>
+            <a className="contact-info-card" href={'mailto:' + email}><span aria-hidden="true">✉</span><div><small>E-MAIL</small><strong>{email}</strong></div></a>
+            <div className="contact-info-card"><span aria-hidden="true">⌖</span><div><small>{text('LOCATION', 'LOCALIZAÇÃO')}</small><strong>{text('Belo Horizonte, Brazil', 'Belo Horizonte, Brasil')}</strong></div></div>
+            <div className="contact-info-socials">
+              {[...socialLinks, instagram].map(({ label, href }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>{label.slice(0, 2)}</a>)}
+            </div>
+            <p className="contact-response-note">{text('Feel free to write in English or Portuguese. I usually reply within one day.', 'Fique à vontade para escrever em inglês ou português. Normalmente respondo em um dia.')}</p>
+          </aside>
+          {sent ? <div className="contact-success"><h2>Thank you!</h2><p>{text('I will get back to you as soon as possible.', 'Entrarei em contato assim que possível.')}</p><button className="button button-secondary" type="button" onClick={() => setSent(false)}>{text('Send another message', 'Enviar outra mensagem')}</button></div> : <form className="contact-form" onSubmit={openEmail} aria-labelledby="contact-form-title">
             <h2 id="contact-form-title">{text('Contact me', 'Entre em contato')}</h2>
             <label>{text('Full name', 'Nome completo')}
               <input name="name" autoComplete="name" required maxLength={120} />
@@ -73,10 +112,10 @@ function Contact() {
                 placeholder={text('What do you need, and when would you like it ready?', 'Do que você precisa e para quando?')} />
             </label>
             <div className="contact-wide contact-submit">
-              <button className="button button-primary" type="submit">{text('Open in my email app', 'Abrir no meu app de e-mail')}</button>
-              <p>{text('Your email app opens with the message ready for you to send.', 'Seu app de e-mail abre com a mensagem pronta para você enviar.')}</p>
+              <button className="button button-primary" type="submit" disabled={sending}>{sending ? text('Sending…', 'Enviando…') : text('Send message', 'Enviar mensagem')}</button>
+              {sendError ? <p className="contact-send-error">{sendError}</p> : <p>{text('Your message will be sent directly to me.', 'Sua mensagem será enviada diretamente para mim.')}</p>}
             </div>
-          </form>
+          </form>}
 
           <address className="contact-address" aria-label={text('Contact information', 'Informações de contato')}>
             <div>
@@ -92,6 +131,23 @@ function Contact() {
               ))}
             </div>
           </address>
+
+          <section className="contact-comments" aria-labelledby="comments-title">
+            <div className="contact-comments-heading">
+              <p className="contact-eyebrow">{text('Recommendations', 'Recomendações')}</p>
+              <h2 id="comments-title">{text('What people say about working with me', 'O que dizem sobre trabalhar comigo')}</h2>
+            </div>
+            <form className="contact-comment-form" onSubmit={addComment}>
+              <label>{text('Name', 'Nome')}<input name="comment-name" required maxLength={80} placeholder={text('Your name', 'Seu nome')} /></label>
+              <label>{text('Comment', 'Comentário')}<textarea name="comment-message" required maxLength={400} rows={4} placeholder={text('Share your experience...', 'Conte como foi trabalhar comigo...')} /></label>
+              <label>{text('Profile photo (required)', 'Foto de perfil (obrigatória)')}<input name="comment-photo" type="file" accept="image/*" required /></label>
+              <button className="button button-primary" type="submit">{text('Leave a recommendation', 'Deixar uma recomendação')}</button>
+            </form>
+            <div className="contact-comment-list">
+              {comments.length === 0 && <p className="contact-empty-comments">{text('Your recommendations will appear here.', 'Suas recomendações aparecerão aqui.')}</p>}
+              {comments.map((comment, index) => <article className="contact-comment" key={`${comment.name}-${index}`}>{comment.photo && <img src={comment.photo} alt="" /> }<div><strong>{comment.name}</strong><p>{comment.message}</p></div></article>)}
+            </div>
+          </section>
         </div>
       )}
     </section>

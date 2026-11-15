@@ -12,6 +12,7 @@ import HomePage from './pages/PaginaInicial'
 import NotFoundPage from './pages/PaginaNaoEncontrada'
 import ProjectsPage from './pages/PaginaProjetos'
 import ResumePage from './pages/PaginaCurriculo'
+import BooksPage from './pages/PaginaLivros'
 
 function Portfolio() {
   const { text } = useLanguage()
@@ -22,6 +23,7 @@ function Portfolio() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/resume" element={<ResumePage />} />
+          <Route path="/books" element={<BooksPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<ExperiencePage />} />

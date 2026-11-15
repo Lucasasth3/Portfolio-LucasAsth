@@ -5,9 +5,7 @@ const navigation = [
   { path: '/', title: { en: "Home", pt: "Início" } },
   { path: '/resume', title: { en: "Resume", pt: "Currículo" } },
   { path: '/projects', title: { en: "Projects", pt: "Projetos" } },
-  { path: '/experience', title: { en: "Experience", pt: "Experiência" } },
-  { path: '/education', title: { en: "Education", pt: "Formação" } },
-  { path: '/education/grades', title: { en: "Academics", pt: "Histórico" } },
+  { path: '/books', title: { en: "Books", pt: "Livros" } },
   { path: '/contact', title: { en: "Contact", pt: "Contato" } },
 ]
 

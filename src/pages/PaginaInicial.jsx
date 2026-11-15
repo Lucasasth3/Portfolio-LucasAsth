@@ -4,6 +4,8 @@ import { useLanguage } from '../contextoIdioma'
 import { githubProfile, repositorySnapshot } from '../data/projetosGitHub'
 import { linkedInProfile } from '../data/perfil'
 import './PaginaInicial.css'
+import './HomeFooter.css'
+import WakaTimeActivity from '../components/WakaTimeActivity'
 
 export default function HomePage() {
   const { text } = useLanguage()
@@ -157,14 +159,32 @@ export default function HomePage() {
           {skillTab === 'tools' && <div className="home-skills-grid">{['VS Code', 'GitHub', 'Vite', 'MongoDB Atlas', 'Postman', 'Figma', 'Spotify API', 'WakaTime'].map((skill) => <span className="home-skill-chip" key={skill}>{skill}</span>)}</div>}
           {skillTab === 'activity' && <div className="home-skill-stats"><strong>{repositorySnapshot.length}+</strong><span>{text('public repositories in the current snapshot', 'repositórios públicos no snapshot atual')}</span><strong>WakaTime</strong><span>{text('time data will appear after connecting your public profile', 'os tempos aparecerão após conectar seu perfil público')}</span></div>}
           {skillTab === 'globe' && <div className="home-skill-globe" aria-label="skills.globo"><div className="home-skill-orbit home-skill-orbit-one"><span>React</span><span>JavaScript</span><span>GitHub</span></div><div className="home-skill-orbit home-skill-orbit-two"><span>Node.js</span><span>Java</span><span>MongoDB</span></div><strong>Lucas<br />Asth</strong></div>}
+          <WakaTimeActivity />
           <p className="home-skills-note">{text('GitHub supplies project activity. WakaTime will supply actual coding time when connected.', 'O GitHub fornece atividade dos projetos. O WakaTime fornecerá o tempo real de programação quando for conectado.')}</p>
         </div>
       </section>
 
-      <section className="home-space-note" id="principles" aria-labelledby="principles-title">
-        <p className="home-space-kicker">01 / {text('About the builder', 'Sobre quem constrói')}</p>
-        <h2 id="principles-title">{text('I like the beginning of things: the question, the sketch and the first working version.', 'Gosto do começo das coisas: da pergunta, do rascunho e da primeira versão funcionando.')}</h2>
-      </section>
+      <footer className="home-footer">
+        <div className="home-footer-brand">
+          <strong><span aria-hidden="true">›_</span> Lucas Asth</strong>
+          <p>Construindo experiências web com curiosidade, código e propósito.</p>
+        </div>
+        <div className="home-footer-navigation">
+          <h3>NAVEGAÇÃO</h3>
+          <Link to="/">Página inicial</Link>
+          <a href="#about">Sobre mim</a>
+          <Link to="/projects">Projetos</Link>
+          <Link to="/contact">Contato</Link>
+        </div>
+        <div className="home-footer-socials">
+          <h3>CONECTADO</h3>
+          <div>
+            <a href={githubProfile} target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href={linkedInProfile} target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:lucas.asth3@outlook.com" aria-label="E-mail">@</a>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
