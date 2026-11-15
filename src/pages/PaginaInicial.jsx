@@ -122,6 +122,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="home-explore" id="skills" aria-labelledby="explore-title">
+        <div className="home-section-heading">
+          <p className="home-space-kicker">04 / {text('Explore the portfolio', 'Explore o portfólio')}</p>
+          <h2 id="explore-title">{text('A map of what I build and keep learning.', 'Um mapa do que construo e continuo aprendendo.')}</h2>
+        </div>
+
+        <nav className="home-explore-links" aria-label={text('Portfolio sections', 'Seções do portfólio')}>
+          <Link to="/resume">{text('Resume', 'Currículo')} <span>↗</span></Link>
+          <Link to="/projects">{text('Projects', 'Projetos')} <span>↗</span></Link>
+          <Link to="/experience">{text('Experience', 'Experiência')} <span>↗</span></Link>
+          <Link to="/education">{text('Education', 'Formação')} <span>↗</span></Link>
+          <Link to="/contact">{text('Contact', 'Contato')} <span>↗</span></Link>
+        </nav>
+
+        <div className="home-skills-panel">
+          <div className="home-skills-header">
+            <span>SKILLS / GITHUB SNAPSHOT</span>
+            <small>{text('Based on projects and current studies', 'Baseado nos projetos e estudos atuais')}</small>
+          </div>
+          <div className="home-skills-grid">
+            {['JavaScript', 'TypeScript', 'Java', 'React', 'Node.js', 'REST APIs', 'MongoDB', 'HTML & CSS', 'Git & GitHub', 'Vite'].map((skill) => (
+              <span className="home-skill-chip" key={skill}>{skill}</span>
+            ))}
+          </div>
+          <p className="home-skills-note">{text('The next step is to connect this panel to a live GitHub summary of repositories and languages.', 'O próximo passo é conectar este painel a um resumo vivo do GitHub com repositórios e linguagens.')}</p>
+        </div>
+      </section>
+
       <section className="home-space-note" id="principles" aria-labelledby="principles-title">
         <p className="home-space-kicker">01 / {text('About the builder', 'Sobre quem constrói')}</p>
         <h2 id="principles-title">{text('I like the beginning of things: the question, the sketch and the first working version.', 'Gosto do começo das coisas: da pergunta, do rascunho e da primeira versão funcionando.')}</h2>

@@ -274,6 +274,18 @@
 .home-music-player { overflow: hidden; min-height: 352px; border: 8px solid #171718; border-radius: 15px; background: #171718; box-shadow: 0 18px 40px rgba(0,0,0,.25); }
 .home-music-player iframe { display: block; width: 100%; min-height: 352px; border: 0; }
 
+.home-explore { max-width: 1050px; margin-inline: auto; padding: 100px 0 120px; border-top: 1px solid var(--color-line); scroll-margin-top: 30px; }
+.home-explore-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.home-explore-links a { display: inline-flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1px solid var(--color-line); border-radius: 5px; color: var(--color-soft); font: .76rem var(--font-mono); text-decoration: none; transition: border-color .2s ease, color .2s ease, transform .2s ease; }
+.home-explore-links a:hover { border-color: var(--color-accent-light); color: var(--color-surface); transform: translateY(-2px); }
+.home-skills-panel { margin-top: 44px; padding: 28px; border: 1px solid rgba(213, 87, 94, .55); background: rgba(43, 37, 38, .65); }
+.home-skills-header { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; color: var(--color-accent-light); font: .74rem var(--font-mono); }
+.home-skills-header small { color: var(--color-soft); }
+.home-skills-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.home-skill-chip { padding: 18px 22px; border: 1px solid var(--color-line); border-radius: 4px; background: var(--color-bg); color: var(--color-surface); font-weight: 700; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.home-skill-chip:hover { border-color: var(--color-accent-light); background: var(--color-accent-tint); transform: translateY(-3px); }
+.home-skills-note { margin: 26px 0 0; color: var(--color-soft); font-size: .86rem; line-height: 1.6; }
+
 @media (max-width: 850px) {
   .home-about { grid-template-columns: minmax(170px, .75fr) minmax(220px, .85fr); }
   .home-about-copy { grid-column: 1 / -1; }
@@ -299,4 +311,7 @@
   .home-music { grid-template-columns: 1fr; padding: 28px; }
   .home-music-player,
   .home-music-player iframe { min-height: 300px; }
+  .home-explore { padding-top: 70px; }
+  .home-skills-header { flex-direction: column; gap: 8px; }
+  .home-skills-panel { padding: 22px; }
 }
