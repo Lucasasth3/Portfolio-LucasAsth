@@ -79,7 +79,7 @@ export default function HomePage() {
             <div className="home-timeline-card">
               <strong>Colégio Marista Dom Silvério</strong>
               <span>{text('Early education through high school', 'Da educação infantil ao ensino médio')}</span>
-              <small>{text('2010 — 2024', '2010 — 2024')}</small>
+              <small>{text('2010 — 2025', '2010 — 2025')}</small>
             </div>
             <div className="home-timeline-card">
               <strong>PUC Minas</strong>
