@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contextoIdioma'
 import { githubProfile, repositorySnapshot } from '../data/projetosGitHub'
@@ -6,6 +7,7 @@ import './PaginaInicial.css'
 
 export default function HomePage() {
   const { text } = useLanguage()
+  const [skillTab, setSkillTab] = useState('technologies')
 
   return (
     <main className="home-space" aria-labelledby="home-title">
@@ -141,12 +143,21 @@ export default function HomePage() {
             <span>SKILLS / GITHUB SNAPSHOT</span>
             <small>{text('Based on projects and current studies', 'Baseado nos projetos e estudos atuais')}</small>
           </div>
-          <div className="home-skills-grid">
-            {['JavaScript', 'TypeScript', 'Java', 'React', 'Node.js', 'REST APIs', 'MongoDB', 'HTML & CSS', 'Git & GitHub', 'Vite'].map((skill) => (
-              <span className="home-skill-chip" key={skill}>{skill}</span>
+          <div className="home-skills-tabs" role="tablist" aria-label={text('Skills views', 'Visões das habilidades')}>
+            {[
+              ['technologies', text('Technologies', 'Tecnologias')],
+              ['tools', text('Tools', 'Ferramentas')],
+              ['activity', text('Activity', 'Atividade')],
+              ['globe', 'skills.globo'],
+            ].map(([value, label]) => (
+              <button type="button" role="tab" aria-selected={skillTab === value} className={skillTab === value ? 'is-active' : ''} onClick={() => setSkillTab(value)} key={value}>{label}</button>
             ))}
           </div>
-          <p className="home-skills-note">{text('The next step is to connect this panel to a live GitHub summary of repositories and languages.', 'O próximo passo é conectar este painel a um resumo vivo do GitHub com repositórios e linguagens.')}</p>
+          {skillTab === 'technologies' && <div className="home-skills-grid">{['JavaScript', 'TypeScript', 'Java', 'React', 'Node.js', 'REST APIs', 'MongoDB', 'HTML & CSS', 'Git & GitHub', 'Vite'].map((skill) => <span className="home-skill-chip" key={skill}>{skill}</span>)}</div>}
+          {skillTab === 'tools' && <div className="home-skills-grid">{['VS Code', 'GitHub', 'Vite', 'MongoDB Atlas', 'Postman', 'Figma', 'Spotify API', 'WakaTime'].map((skill) => <span className="home-skill-chip" key={skill}>{skill}</span>)}</div>}
+          {skillTab === 'activity' && <div className="home-skill-stats"><strong>{repositorySnapshot.length}+</strong><span>{text('public repositories in the current snapshot', 'repositórios públicos no snapshot atual')}</span><strong>WakaTime</strong><span>{text('time data will appear after connecting your public profile', 'os tempos aparecerão após conectar seu perfil público')}</span></div>}
+          {skillTab === 'globe' && <div className="home-skill-globe" aria-label="skills.globo"><div className="home-skill-orbit home-skill-orbit-one"><span>React</span><span>JavaScript</span><span>GitHub</span></div><div className="home-skill-orbit home-skill-orbit-two"><span>Node.js</span><span>Java</span><span>MongoDB</span></div><strong>Lucas<br />Asth</strong></div>}
+          <p className="home-skills-note">{text('GitHub supplies project activity. WakaTime will supply actual coding time when connected.', 'O GitHub fornece atividade dos projetos. O WakaTime fornecerá o tempo real de programação quando for conectado.')}</p>
         </div>
       </section>
 
