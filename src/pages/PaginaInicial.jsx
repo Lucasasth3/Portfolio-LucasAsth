@@ -118,7 +118,7 @@ export default function HomePage() {
           <a className="home-space-button home-space-button-secondary" href="https://open.spotify.com" target="_blank" rel="noreferrer">{text('Open my Spotify', 'Abrir meu Spotify')} <span aria-hidden="true">↗</span></a>
         </div>
         <div className="home-music-player">
-          <iframe title={text('Lucas playlist on Spotify', 'Playlist do Lucas no Spotify')} src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
+          <iframe title={text('Lucas playlist on Spotify', 'Playlist do Lucas no Spotify')} src="https://open.spotify.com/embed/playlist/7r9JJq4hY9WSLxOzHUgcOk?utm_source=generator&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
         </div>
       </section>
 
