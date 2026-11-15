@@ -6,17 +6,18 @@ import './Jornada.css'
 
 function Hero() {
   const { text } = useLanguage()
+  const technologies = ['Java', 'JavaScript', 'React', 'Node.js', 'APIs REST', 'MongoDB']
 
   return (
     <section className="journey-home" id="home" aria-labelledby="hero-title">
       <div className="journey-intro">
-        <p className="journey-kicker">Lucas Asth <span aria-hidden="true">/</span> {text('Belo Horizonte, Brazil', 'Belo Horizonte, Brasil')}</p>
-        <h1 id="hero-title">{text('From selling sweets to writing code', 'De vender doces a escrever código')}</h1>
-        <p className="journey-description">{text('I started selling sweets at school. At 15, I learned digital marketing and programming, then took on my first freelance projects.', 'Comecei vendendo doces na escola. Aos 15, aprendi marketing digital e programação e comecei a fazer meus primeiros freelas.')}</p>
-        <p className="journey-instructions">{text('Follow my story in three scenes and choose what Lucas does next.', 'Acompanhe minha história em três cenas e escolha o que o Lucas faz a seguir.')}</p>
+        <p className="journey-kicker">Lucas Asth <span aria-hidden="true">/</span> {text('Software Engineer in training', 'Software Engineer em formação')}</p>
+        <h1 id="hero-title">{text('Building useful software with curiosity and purpose.', 'Construindo software útil com curiosidade e propósito.')}</h1>
+        <p className="journey-description">{text('I am a Software Engineering student who learns by turning real problems into web applications, APIs and data-driven experiences.', 'Sou estudante de Engenharia de Software e aprendo transformando problemas reais em aplicações web, APIs e experiências orientadas por dados.')}</p>
+        <p className="journey-instructions">{text('Explore my journey, the technologies I use and the projects that shaped my next step.', 'Explore minha jornada, as tecnologias que estudo e os projetos que construíram meu próximo passo.')}</p>
         <div className="journey-actions">
-          <Link className="button button-secondary" to="/#projects">{text('Projects', 'Projetos')}</Link>
-          <Link className="button button-secondary" to="/resume">{text('Résumé', 'Currículo')}</Link>
+          <Link className="button button-primary" to="/#projects">{text('Explore projects', 'Explorar projetos')}</Link>
+          <Link className="button button-secondary" to="/resume">{text('Resume', 'Currículo')}</Link>
           <Link className="button button-secondary" to="/contact">{text('Contact', 'Contato')}</Link>
         </div>
         <div className="journey-social">
@@ -24,6 +25,9 @@ function Hero() {
             <a key={label} href={href} target="_blank" rel="noreferrer">{label} <span aria-hidden="true">↗</span></a>
           ))}
         </div>
+        <ul className="hero-tech-list" aria-label={text('Technologies', 'Tecnologias')}>
+          {technologies.map(technology => <li key={technology}>{technology}</li>)}
+        </ul>
       </div>
       <Journey />
     </section>

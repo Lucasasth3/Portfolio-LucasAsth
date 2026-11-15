@@ -1,3 +1,100 @@
+.journey-home {
+  padding: clamp(50px, 8vw, 104px) 0 48px;
+}
+
+.journey-intro {
+  max-width: 820px;
+  margin-bottom: clamp(32px, 6vw, 70px);
+}
+
+.journey-kicker,
+.journey-instructions,
+.journey-social,
+.hero-tech-list {
+  font-family: var(--font-mono);
+}
+
+.journey-kicker {
+  margin: 0 0 18px;
+  color: var(--color-accent-light);
+  font-size: .82rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.journey-kicker span {
+  color: var(--color-soft);
+}
+
+.journey-intro h1 {
+  max-width: 900px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: .98;
+  letter-spacing: -.07em;
+}
+
+.journey-description {
+  max-width: 66ch;
+  margin: 28px 0 0;
+  color: var(--color-soft);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.65;
+}
+
+.journey-instructions {
+  max-width: 66ch;
+  margin: 14px 0 0;
+  color: var(--color-surface);
+  line-height: 1.55;
+}
+
+.journey-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.journey-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.journey-social a {
+  color: var(--color-soft);
+  font-size: .78rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.journey-social a:hover {
+  color: var(--color-surface);
+}
+
+.hero-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-tech-list li {
+  padding: 7px 10px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  color: var(--color-soft);
+  font-size: .72rem;
+}
+
+.hero-tech-list li:hover {
+  border-color: var(--color-accent-light);
+  color: var(--color-surface);
+}
+
 .journey-game {
   padding: clamp(26px, 4vw, 56px) 0 48px;
 }
