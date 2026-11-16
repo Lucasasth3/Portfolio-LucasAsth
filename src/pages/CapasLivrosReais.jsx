@@ -6,10 +6,11 @@ export default function CapasLivrosReais({ books }) {
   const { text } = useLanguage()
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState('all')
-  const [covers, setCovers] = useState(() => Object.fromEntries(books.map((book) => [book.title, book.isbnCover])))
+  const [covers, setCovers] = useState(() => Object.fromEntries(books.map((book) => [book.title, book.localCover || book.isbnCover])))
   useEffect(() => {
     let active = true
     Promise.all(books.map(async (book) => {
+      if (book.localCover) return [book.title, book.localCover]
       try {
         const googleResponse = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${encodeURIComponent(book.isbn)}&maxResults=1`)
         const googleResult = await googleResponse.json()

@@ -17,6 +17,13 @@ const projects = [
     description: { en: "A web app that searches the TMDB API for movies by title and displays their posters, ratings, and synopses.", pt: "Aplicação que consulta a API do TMDB e permite buscar filmes pelo título. Os resultados exibem pôster, nota e sinopse." },
     technologies: ['JavaScript', 'HTML', 'CSS', 'TMDB API'],
   },
+  {
+    title: 'CosmoMind',
+    id: 'cosmomind',
+    repository: 'cosmomind',
+    description: { en: 'A project focused on turning ideas into a clear digital experience through technology, experimentation, and product thinking.', pt: 'Um projeto voltado para transformar ideias em uma experiência digital clara, unindo tecnologia, experimentação e visão de produto.' },
+    technologies: ['React', 'JavaScript', 'Vite'],
+  },
 ]
 
 function Projects() {

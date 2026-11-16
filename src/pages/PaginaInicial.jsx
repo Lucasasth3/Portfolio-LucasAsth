@@ -9,7 +9,7 @@ import WakaTimeActivity from '../components/WakaTimeActivity'
 
 export default function HomePage() {
   const { text } = useLanguage()
-  const [skillTab, setSkillTab] = useState('technologies')
+  const [skillTab, setSkillTab] = useState('grade')
 
   return (
     <main className="home-space" aria-labelledby="home-title">
@@ -41,8 +41,7 @@ export default function HomePage() {
             <span aria-hidden="true">✦</span>
           </div>
           <div className="home-photo-placeholder">
-            <span>{text('Your photo', 'Sua foto')}</span>
-            <small>240 × 300</small>
+            <img src="/images/lucas.png" alt="Lucas Asth" />
           </div>
           <div className="home-profile-card-bottom">
             <strong>Lucas Asth</strong>
@@ -59,7 +58,9 @@ export default function HomePage() {
         </div>
 
         <div className="home-about-visual" tabIndex="0" aria-label={text('Hover to see the illustrated version', 'Passe o mouse para ver a versão ilustrada')}>
-          <div className="home-about-image home-about-image-photo"><span>{text('Your professional photo', 'Sua foto profissional')}</span></div>
+          <div className="home-about-image home-about-image-photo">
+            <img src="/images/lucas.png" alt="Lucas Asth" />
+          </div>
           <div className="home-about-image home-about-image-drawing" aria-hidden="true"><span>{text('Illustrated version', 'Versão ilustrada')}</span></div>
           <span className="home-about-hint">{text('Hover me', 'Passe o mouse')}</span>
         </div>
@@ -147,19 +148,17 @@ export default function HomePage() {
           </div>
           <div className="home-skills-tabs" role="tablist" aria-label={text('Skills views', 'Visões das habilidades')}>
             {[
-              ['technologies', text('Technologies', 'Tecnologias')],
-              ['tools', text('Tools', 'Ferramentas')],
-              ['activity', text('Activity', 'Atividade')],
+              ['grade', text('Language grade', 'Grade de linguagens')],
+              ['slices', text('Time slices', 'Fatias do tempo')],
               ['globe', 'skills.globo'],
             ].map(([value, label]) => (
               <button type="button" role="tab" aria-selected={skillTab === value} className={skillTab === value ? 'is-active' : ''} onClick={() => setSkillTab(value)} key={value}>{label}</button>
             ))}
           </div>
-          {skillTab === 'technologies' && <div className="home-skills-grid">{['JavaScript', 'TypeScript', 'Java', 'React', 'Node.js', 'REST APIs', 'MongoDB', 'HTML & CSS', 'Git & GitHub', 'Vite'].map((skill) => <span className="home-skill-chip" key={skill}>{skill}</span>)}</div>}
-          {skillTab === 'tools' && <div className="home-skills-grid">{['VS Code', 'GitHub', 'Vite', 'MongoDB Atlas', 'Postman', 'Figma', 'Spotify API', 'WakaTime'].map((skill) => <span className="home-skill-chip" key={skill}>{skill}</span>)}</div>}
+          {skillTab === 'grade' && <WakaTimeActivity view="grade" />}
+          {skillTab === 'slices' && <WakaTimeActivity view="slices" />}
           {skillTab === 'activity' && <div className="home-skill-stats"><strong>{repositorySnapshot.length}+</strong><span>{text('public repositories in the current snapshot', 'repositórios públicos no snapshot atual')}</span><strong>WakaTime</strong><span>{text('time data will appear after connecting your public profile', 'os tempos aparecerão após conectar seu perfil público')}</span></div>}
           {skillTab === 'globe' && <div className="home-skill-globe" aria-label="skills.globo"><div className="home-skill-orbit home-skill-orbit-one"><span>React</span><span>JavaScript</span><span>GitHub</span></div><div className="home-skill-orbit home-skill-orbit-two"><span>Node.js</span><span>Java</span><span>MongoDB</span></div><strong>Lucas<br />Asth</strong></div>}
-          <WakaTimeActivity />
           <p className="home-skills-note">{text('GitHub supplies project activity. WakaTime will supply actual coding time when connected.', 'O GitHub fornece atividade dos projetos. O WakaTime fornecerá o tempo real de programação quando for conectado.')}</p>
         </div>
       </section>

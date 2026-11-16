@@ -20,7 +20,46 @@ const books = bookSeed.flatMap(([category, items]) => items.map(([title, author,
   cover: `https://covers.openlibrary.org/b/title/${encodeURIComponent(title)}-L.jpg`,
   isbnCover: `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg`
 })))
+const localCovers = {
+  'A arte da felicidade': '/capas/A arte da felicidade.png',
+  'A coragem de ser imperfeito': '/capas/A coragem de ser imperfeito.png',
+  'A montanha Ã© vocÃª': '/capas/A montanha é você.png',
+  'AntifrÃ¡gil': '/capas/Antifrágil.png',
+  'Mais esperto que o diabo': '/capas/Mais esperto que o diabo.png',
+  'MeditaÃ§Ãµes': '/capas/Meditações.png',
+  'O homem em busca de sentido': '/capas/O homem em busca de sentido.png',
+  'O jeito Harvard de ser feliz': '/capas/O jeito Harvard de ser feliz.png',
+  'O obstÃ¡culo Ã© o caminho': '/capas/O obstáculo é o caminho.png',
+  'O poder do agora': '/capas/O poder do agora.png',
+  'Os 7 hÃ¡bitos das pessoas altamente eficazes': '/capas/Os 7 hábitos das pessoas altamente eficazes.png'
+}
+books.forEach((book) => { book.localCover = localCovers[book.title] })
+const localCoversByIsbn = {
+  '9788543105871': '/capas/Os 7 hábitos das pessoas altamente eficazes.png',
+  '9786559100576': '/capas/Meditações.png',
+  '9786555603491': '/capas/A montanha é você.png',
+  '9788551004924': '/capas/O obstáculo é o caminho.png',
+  '9788576849333': '/capas/Antifrágil.png',
+  '9788547000240': '/capas/Mindset.png'
+}
+books.forEach((book) => { book.localCover = book.localCover || localCoversByIsbn[book.isbn] })
 const fallbackCover = (title) => `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900"><rect width="600" height="900" fill="#241f23"/><rect x="34" y="34" width="532" height="832" fill="none" stroke="#d5575e" stroke-width="4"/><text x="60" y="460" fill="#fefefe" font-size="42" font-family="Georgia" font-weight="bold">${title.replace(/[&<>]/g, '')}</text><text x="60" y="820" fill="#e6a8a8" font-size="22" font-family="Arial">Lucas Asth · leitura</text></svg>`)}`
+
+const suppliedCoversByIsbn = {
+  '9788543105871': '/capas/os-7-habitos.png',
+  '9786559100576': '/capas/meditacoes.png',
+  '9786555603491': '/capas/a-montanha-e-voce.png',
+  '9788551004924': '/capas/o-obstaculo-e-o-caminho.png',
+  '9788576849333': '/capas/antifragil.png',
+  '9788551003422': '/capas/novas/trabalho-focado.png',
+  '9788547000240': '/capas/novas/mindset.png',
+  '9788550807564': '/capas/novas/habitos-atomicos.png',
+  '9780349406784': '/capas/novas/getting-things-done.png',
+  '9788573126742': '/capas/novas/comece-pelo-mais-dificil.png',
+  '9788573127152': '/capas/novas/a-triade-do-tempo.png',
+  '9788543102382': '/capas/novas/a-unica-coisa.png'
+}
+books.forEach((book) => { book.localCover = suppliedCoversByIsbn[book.isbn] || book.localCover })
 
 export default function BooksPage() {
   if (typeof window !== 'undefined' && window.location.pathname === '/books') return <CapasLivrosReais books={books} />
@@ -54,6 +93,6 @@ export default function BooksPage() {
     <div className="books-summary"><strong>{books.length}</strong><span>{text('books read and revisited', 'livros lidos e revisitados')}</span></div>
     <p className="books-rating-note">{text('Ratings are a snapshot of public reader averages and may change over time.', 'As avaliações são um retrato das médias públicas de leitores e podem mudar com o tempo.')}</p>
     <div className="books-filters"><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={text('Search by title', 'Buscar por título')} /><select value={category} onChange={(event) => setCategory(event.target.value)}>{categories.map((item) => <option key={item} value={item}>{item === 'all' ? text('All categories', 'Todas as categorias') : item}</option>)}</select></div>
-    <div className="books-grid">{filtered.map((book) => <article className="book-card" key={book.title}><div className="book-cover"><img src={book.cover} alt={`Capa de ${book.title}`} loading="lazy" onLoad={(event) => { if (event.currentTarget.naturalWidth < 10) { event.currentTarget.src = book.isbnCover } }} onError={(event) => { if (event.currentTarget.src === book.isbnCover) { event.currentTarget.onerror = null; event.currentTarget.src = fallbackCover(book.title) } else { event.currentTarget.src = book.isbnCover } }} /></div><div className="book-info"><span>{book.category}</span><h2>{book.title}</h2><p>{book.author}</p><div className="book-rating" aria-label={`${book.rating} de 5 estrelas`}>{'★'.repeat(book.rating)}<i>{'★'.repeat(5 - book.rating)}</i></div></div></article>)}</div>
+    <div className="books-grid">{filtered.map((book) => <article className="book-card" key={book.title}><div className="book-cover"><img src={book.localCover || book.cover} alt={`Capa de ${book.title}`} loading="lazy" onLoad={(event) => { if (event.currentTarget.naturalWidth < 10) { event.currentTarget.src = book.isbnCover } }} onError={(event) => { if (event.currentTarget.src === book.isbnCover) { event.currentTarget.onerror = null; event.currentTarget.src = fallbackCover(book.title) } else { event.currentTarget.src = book.isbnCover } }} /></div><div className="book-info"><span>{book.category}</span><h2>{book.title}</h2><p>{book.author}</p><div className="book-rating" aria-label={`${book.rating} de 5 estrelas`}>{'★'.repeat(book.rating)}<i>{'★'.repeat(5 - book.rating)}</i></div></div></article>)}</div>
   </section>
 }
