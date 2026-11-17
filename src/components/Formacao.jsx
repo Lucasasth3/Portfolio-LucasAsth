@@ -13,7 +13,7 @@ function Education() {
         <article className="portfolio-entry">
           <h3>{text("Bachelor’s Degree in Software Engineering", "Bacharelado em Engenharia de Software")}</h3>
           <p className="entry-organization">Pontifícia Universidade Católica de Minas Gerais · PUC Minas</p>
-          <p className="entry-period">{text("2026 – expected 2030", "2026 – previsão de conclusão em 2030")}</p>
+          <p className="entry-period">{text("Feb 2026 – expected 2030", "Fev 2026 – previsão de conclusão em 2030")}</p>
           <ul className="tag-list">
             {subjects.map((subject) => <li key={subject.en ?? subject}>{subject[language] ?? subject}</li>)}
           </ul>

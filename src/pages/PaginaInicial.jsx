@@ -90,7 +90,7 @@ export default function HomePage() {
             <div className="home-timeline-card">
               <strong>PUC Minas</strong>
               <span>{text('Software Engineering', 'Engenharia de Software')}</span>
-              <small>{text('2025 — Dec 2029', '2025 — Dez 2029')}</small>
+              <small>{text('Feb 2026 — Dec 2029', 'Fev 2026 — Dez 2029')}</small>
             </div>
           </article>
 

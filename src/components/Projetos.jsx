@@ -1,56 +1,53 @@
+import { useState } from 'react'
 import { useLanguage } from '../contextoIdioma'
-import PortfolioSection from './SecaoPortfolio'
 import GitHubProjects from './ProjetosGitHub'
-import { repositoryUrl } from '../data/projetosGitHub'
+import { githubProfile } from '../data/projetosGitHub'
+import { projects } from '../data/projetos'
+import './Projetos.css'
 
-const projects = [
-  {
-    title: 'Uai, Adota!',
-    id: 'uai-adota',
-    repository: 'Site-Final',
-    description: { en: "A pet adoption platform for Belo Horizonte. An interactive map shows available pets and the organization caring for each animal.", pt: "Plataforma de adoção de animais em Belo Horizonte. Um mapa interativo mostra os pets disponíveis e as informações da ONG responsável por cada animal." },
-    technologies: ['JavaScript', 'Mapbox API', 'JSON Server'],
-  },
-  {
-    title: { en: "Movie Catalog", pt: "Catálogo de Filmes" },
-    id: 'catalogo-filmes',
-    description: { en: "A web app that searches the TMDB API for movies by title and displays their posters, ratings, and synopses.", pt: "Aplicação que consulta a API do TMDB e permite buscar filmes pelo título. Os resultados exibem pôster, nota e sinopse." },
-    technologies: ['JavaScript', 'HTML', 'CSS', 'TMDB API'],
-  },
-  {
-    title: 'CosmoMind',
-    id: 'cosmomind',
-    repository: 'cosmomind',
-    description: { en: 'A project focused on turning ideas into a clear digital experience through technology, experimentation, and product thinking.', pt: 'Um projeto voltado para transformar ideias em uma experiência digital clara, unindo tecnologia, experimentação e visão de produto.' },
-    technologies: ['React', 'JavaScript', 'Vite'],
-  },
-]
+function ProjectIcon({ source = false }) {
+  return <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    {source ? <><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18" /></> : <><path d="M14 3h7v7m0-7L10 14" /><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5" /></>}
+  </svg>
+}
+
+function ProjectCover({ project, title }) {
+  const [failedCover, setFailedCover] = useState(null)
+  const showImage = project.cover && failedCover !== project.cover
+  return <div className={`project-showcase-media project-showcase-media--${project.id}${showImage ? ' has-cover' : ''}`}>
+    {showImage ? <img src={project.cover} alt={title} loading="lazy" decoding="async" onError={() => setFailedCover(project.cover)} /> : <div className="project-showcase-art" aria-hidden="true"><span className="project-art-orbit" /><span className="project-art-monogram">{project.initials}</span><span className="project-art-title">{title}</span></div>}
+    <div className="project-media-caption" aria-hidden="true"><span>Lucas Asth</span><span>{project.id}</span></div>
+  </div>
+}
 
 function Projects() {
   const { language, text } = useLanguage()
   return (
-    <PortfolioSection id="projects">
-      <div className="project-list">
-        {projects.map(({ id, title, description, technologies, repository }) => (
-          <article className="portfolio-entry project-feature" key={id}>
-            <div className={'project-cover project-cover--' + id} aria-hidden="true"><span /></div>
-            <div className="project-details">
-              <h3>{title[language] ?? title}</h3>
-              <p>{description[language]}</p>
-              <ul className="tag-list">
-                {technologies.map((technology) => <li key={technology}>{technology}</li>)}
-              </ul>
-              {repository && (
-                <a className="project-source" href={repositoryUrl(repository)} target="_blank" rel="noreferrer">
-                  {text('View source on GitHub', 'Ver código no GitHub')} <span aria-hidden="true">↗</span>
-                </a>
-              )}
+    <section className="projects-page" aria-labelledby="projects-title">
+      <header className="projects-intro">
+        <div><p className="projects-eyebrow">{text('Selected projects', 'Projetos selecionados')}</p><h1 id="projects-title">{text('Code in practice.', 'Código em prática.')}</h1></div>
+        <div className="projects-intro-copy"><p>{text('Applications I have worked on, the ideas behind them and the tools I used to build them.', 'Aplicações em que trabalhei, as ideias por trás delas e as ferramentas que usei para construí-las.')}</p><a href={githubProfile} target="_blank" rel="noreferrer">{text('My GitHub', 'Meu GitHub')} <span aria-hidden="true">↗</span></a></div>
+      </header>
+      <div className="project-showcase-list">
+        {projects.map(project => {
+          const title = typeof project.title === 'string' ? project.title : project.title[language]
+          return <article className="project-showcase" key={project.id} aria-labelledby={`project-${project.id}`}>
+            <ProjectCover project={project} title={title} />
+            <div className="project-showcase-content">
+              <p className="project-showcase-category">{project.category[language]}</p>
+              <h2 id={`project-${project.id}`}>{title}</h2>
+              <p className="project-showcase-description">{project.description[language]}</p>
+              <ul className="project-showcase-stack" aria-label={text('Technologies used', 'Tecnologias utilizadas')}>{project.technologies.map(technology => <li key={technology}>{technology}</li>)}</ul>
+              {(project.website || project.github) && <div className="project-showcase-actions">
+                {project.website && <a className="project-action project-action-primary" href={project.website} target="_blank" rel="noreferrer" aria-label={`${text('Visit website', 'Acessar site')}: ${title}`}><ProjectIcon />{text('Visit website', 'Acessar site')}</a>}
+                {project.github && <a className="project-action" href={project.github} target="_blank" rel="noreferrer" aria-label={`${text('Source code', 'Código no GitHub')}: ${title}`}><ProjectIcon source />{text('Source code', 'Código no GitHub')}</a>}
+              </div>}
             </div>
           </article>
-        ))}
+        })}
       </div>
-      <GitHubProjects />
-    </PortfolioSection>
+      <div className="projects-more"><GitHubProjects /></div>
+    </section>
   )
 }
 
