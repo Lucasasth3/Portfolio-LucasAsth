@@ -1,0 +1,127 @@
+{
+  "data": {
+    "total_seconds": 272825.789,
+    "daily_average": 6200.586113636364,
+    "days_active": 44,
+    "days_including_holidays": 66,
+    "start": "2026-09-11T03:00:00Z",
+    "end": "2026-11-16T02:59:59Z",
+    "languages": [
+      {
+        "name": "Python",
+        "total_seconds": 68127.075,
+        "percent": 24.97,
+        "text": "18 hrs 55 mins"
+      },
+      {
+        "name": "Java",
+        "total_seconds": 47852.438,
+        "percent": 17.54,
+        "text": "13 hrs 17 mins"
+      },
+      {
+        "name": "Other",
+        "total_seconds": 45772.221,
+        "percent": 16.78,
+        "text": "12 hrs 42 mins"
+      },
+      {
+        "name": "JavaScript",
+        "total_seconds": 41266.161,
+        "percent": 15.13,
+        "text": "11 hrs 27 mins"
+      },
+      {
+        "name": "Markdown",
+        "total_seconds": 33093.236,
+        "percent": 12.13,
+        "text": "9 hrs 11 mins"
+      },
+      {
+        "name": "CSS",
+        "total_seconds": 19711.769,
+        "percent": 7.23,
+        "text": "5 hrs 28 mins"
+      },
+      {
+        "name": "Text",
+        "total_seconds": 7852.181,
+        "percent": 2.88,
+        "text": "2 hrs 10 mins"
+      },
+      {
+        "name": "Bash",
+        "total_seconds": 4125.47,
+        "percent": 1.51,
+        "text": "1 hr 8 mins"
+      },
+      {
+        "name": "HTML",
+        "total_seconds": 2812.356,
+        "percent": 1.03,
+        "text": "46 mins"
+      },
+      {
+        "name": "HTTP",
+        "total_seconds": 1266.062,
+        "percent": 0.46,
+        "text": "21 mins"
+      },
+      {
+        "name": "RGBDS Assembly",
+        "total_seconds": 584.572,
+        "percent": 0.21,
+        "text": "9 mins"
+      },
+      {
+        "name": "JSON",
+        "total_seconds": 199.364,
+        "percent": 0.07,
+        "text": "3 mins"
+      },
+      {
+        "name": "PowerShell",
+        "total_seconds": 88.906,
+        "percent": 0.03,
+        "text": "1 min"
+      },
+      {
+        "name": "YAML",
+        "total_seconds": 73.887,
+        "percent": 0.03,
+        "text": "1 min"
+      },
+      {
+        "name": "Java Properties",
+        "total_seconds": 0.089,
+        "percent": 0,
+        "text": "0 secs"
+      },
+      {
+        "name": "Docker",
+        "total_seconds": 0.001,
+        "percent": 0,
+        "text": "0 secs"
+      },
+      {
+        "name": "XML",
+        "total_seconds": 0.001,
+        "percent": 0,
+        "text": "0 secs"
+      }
+    ],
+    "editors": [
+      {
+        "name": "VS Code",
+        "total_seconds": 272825.789,
+        "percent": 100
+      }
+    ]
+  },
+  "updatedAt": "2026-11-17T00:11:06.291Z",
+  "profileUrl": "https://wakatime.com/@7f4d92b1-c8ad-4801-9b45-b3f1fc59d3af",
+  "range": "all_time",
+  "source": "live",
+  "stale": false,
+  "status": "ok"
+}

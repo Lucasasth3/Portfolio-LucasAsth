@@ -1,18 +1,19 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contextoIdioma'
-import { githubProfile, repositorySnapshot } from '../data/projetosGitHub'
+import { githubProfile } from '../data/projetosGitHub'
 import { linkedInProfile } from '../data/perfil'
 import './PaginaInicial.css'
 import './HomeFooter.css'
 import WakaTimeActivity from '../components/WakaTimeActivity'
+import SkillsGlobe from '../components/SkillsGlobe'
 
 export default function HomePage() {
   const { text } = useLanguage()
   const [skillTab, setSkillTab] = useState('grade')
 
   return (
-    <main className="home-space" aria-labelledby="home-title">
+    <div className="home-space" aria-labelledby="home-title">
       <div className="home-stars" aria-hidden="true">
         <span className="home-asteroid home-asteroid-one" />
         <span className="home-asteroid home-asteroid-two" />
@@ -143,23 +144,22 @@ export default function HomePage() {
 
         <div className="home-skills-panel">
           <div className="home-skills-header">
-            <span>SKILLS / GITHUB SNAPSHOT</span>
+            <span>SKILLS / WAKATIME</span>
             <small>{text('Based on projects and current studies', 'Baseado nos projetos e estudos atuais')}</small>
           </div>
           <div className="home-skills-tabs" role="tablist" aria-label={text('Skills views', 'Visões das habilidades')}>
             {[
               ['grade', text('Language grade', 'Grade de linguagens')],
               ['slices', text('Time slices', 'Fatias do tempo')],
-              ['globe', 'skills.globo'],
+              ['globe', text('Skill globe', 'Globo de habilidades')],
             ].map(([value, label]) => (
-              <button type="button" role="tab" aria-selected={skillTab === value} className={skillTab === value ? 'is-active' : ''} onClick={() => setSkillTab(value)} key={value}>{label}</button>
+              <button type="button" role="tab" id={`skills-tab-${value}`} aria-controls="skills-panel" tabIndex={skillTab === value ? 0 : -1} onKeyDown={event => { const values = ['grade', 'slices', 'globe']; const index = values.indexOf(value); const next = event.key === 'ArrowRight' ? values[(index + 1) % 3] : event.key === 'ArrowLeft' ? values[(index + 2) % 3] : event.key === 'Home' ? values[0] : event.key === 'End' ? values[2] : null; if (next) { event.preventDefault(); setSkillTab(next); document.getElementById(`skills-tab-${next}`)?.focus() } }} aria-selected={skillTab === value} className={skillTab === value ? 'is-active' : ''} onClick={() => setSkillTab(value)} key={value}>{label}</button>
             ))}
           </div>
-          {skillTab === 'grade' && <WakaTimeActivity view="grade" />}
-          {skillTab === 'slices' && <WakaTimeActivity view="slices" />}
-          {skillTab === 'activity' && <div className="home-skill-stats"><strong>{repositorySnapshot.length}+</strong><span>{text('public repositories in the current snapshot', 'repositórios públicos no snapshot atual')}</span><strong>WakaTime</strong><span>{text('time data will appear after connecting your public profile', 'os tempos aparecerão após conectar seu perfil público')}</span></div>}
-          {skillTab === 'globe' && <div className="home-skill-globe" aria-label="skills.globo"><div className="home-skill-orbit home-skill-orbit-one"><span>React</span><span>JavaScript</span><span>GitHub</span></div><div className="home-skill-orbit home-skill-orbit-two"><span>Node.js</span><span>Java</span><span>MongoDB</span></div><strong>Lucas<br />Asth</strong></div>}
-          <p className="home-skills-note">{text('GitHub supplies project activity. WakaTime will supply actual coding time when connected.', 'O GitHub fornece atividade dos projetos. O WakaTime fornecerá o tempo real de programação quando for conectado.')}</p>
+          <div id="skills-panel" role="tabpanel" aria-labelledby={`skills-tab-${skillTab}`} tabIndex="0">
+            {skillTab === 'globe' ? <SkillsGlobe /> : <WakaTimeActivity view={skillTab} />}
+          </div>
+          <p className="home-skills-note">{text('My tools, studies and time spent building software.', 'Minhas ferramentas, estudos e o tempo dedicado a construir software.')}</p>
         </div>
       </section>
 
@@ -184,6 +184,6 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-    </main>
+    </div>
   )
 }

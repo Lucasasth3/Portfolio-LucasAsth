@@ -3,7 +3,8 @@
   isolation: isolate;
   overflow: hidden;
   min-height: calc(100vh - 84px);
-  margin-inline: calc((1120px - 100vw) / 2);
+  width: 100vw;
+  margin-inline: calc((100% - 100vw) / 2);
   padding: 0 max(32px, calc((100vw - 1120px) / 2));
   background:
     radial-gradient(circle at 15% 40%, rgba(181, 42, 45, .18), transparent 28%),
@@ -349,7 +350,7 @@
 }
 
 @media (max-width: 760px) {
-  .home-space { margin-inline: -32px; padding-inline: 24px; }
+  .home-space { margin-inline: calc((100% - 100vw) / 2); padding-inline: 24px; }
   .home-space-hero { grid-template-columns: 1fr; min-height: auto; padding-top: 80px; }
   .home-profile-card { max-width: 300px; margin: 24px auto 0; }
   .home-space-copy h1 { font-size: clamp(3.5rem, 17vw, 6rem); }
