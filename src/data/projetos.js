@@ -2,6 +2,35 @@ import { repositoryUrl } from './projetosGitHub'
 
 export const projects = [
   {
+    id: 'calculador',
+    title: 'CalculaDOR',
+    category: { en: 'Business management', pt: 'Gestão comercial' },
+    description: {
+      en: 'A business management system with inventory, financial tracking and a dashboard showing revenue, customers, low stock and pending bills.',
+      pt: 'Sistema de gestão comercial com estoque, controle financeiro e dashboard de faturamento, clientes, estoque crítico e contas pendentes.',
+    },
+    technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Chart.js', 'JSON Server'],
+    cover: '/images/projetos/calculador.png',
+    github: null,
+    website: null,
+    initials: 'CD',
+  },
+  {
+    id: 'doacao',
+    title: 'DoAção',
+    category: { en: 'Blood donation', pt: 'Doação de sangue' },
+    description: {
+      en: 'A blood donation platform with pre-screening and an interactive map of blood centers and collection points.',
+      pt: 'Plataforma de doação de sangue com pré-triagem e mapa interativo de hemocentros e pontos de coleta.',
+    },
+    technologies: ['Leaflet', 'OpenStreetMap'],
+    cover: '/images/projetos/doacao.png',
+    privateRepository: true,
+    github: null,
+    website: null,
+    initials: 'DA',
+  },
+  {
     id: 'uai-adota',
     title: 'Uai, Adota!',
     category: { en: 'Pet adoption', pt: 'Adoção de animais' },
@@ -14,20 +43,6 @@ export const projects = [
     github: repositoryUrl('Site-Final'),
     website: null,
     initials: 'UA',
-  },
-  {
-    id: 'catalogo-filmes',
-    title: { en: 'Movie Catalog', pt: 'Catálogo de Filmes' },
-    category: { en: 'Cinema & discovery', pt: 'Cinema e descoberta' },
-    description: {
-      en: 'A web app that searches the TMDB API for movies by title and displays their posters, ratings, and synopses.',
-      pt: 'Aplicação que consulta a API do TMDB e permite buscar filmes pelo título. Os resultados exibem pôster, nota e sinopse.',
-    },
-    technologies: ['JavaScript', 'HTML', 'CSS', 'TMDB API'],
-    cover: null,
-    github: null,
-    website: null,
-    initials: 'CF',
   },
   {
     id: 'cosmomind',

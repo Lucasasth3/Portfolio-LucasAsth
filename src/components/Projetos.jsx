@@ -38,9 +38,10 @@ function Projects() {
               <h2 id={`project-${project.id}`}>{title}</h2>
               <p className="project-showcase-description">{project.description[language]}</p>
               <ul className="project-showcase-stack" aria-label={text('Technologies used', 'Tecnologias utilizadas')}>{project.technologies.map(technology => <li key={technology}>{technology}</li>)}</ul>
-              {(project.website || project.github) && <div className="project-showcase-actions">
+              {(project.website || project.github || project.privateRepository) && <div className="project-showcase-actions">
                 {project.website && <a className="project-action project-action-primary" href={project.website} target="_blank" rel="noreferrer" aria-label={`${text('Visit website', 'Acessar site')}: ${title}`}><ProjectIcon />{text('Visit website', 'Acessar site')}</a>}
-                {project.github && <a className="project-action" href={project.github} target="_blank" rel="noreferrer" aria-label={`${text('Source code', 'Código no GitHub')}: ${title}`}><ProjectIcon source />{text('Source code', 'Código no GitHub')}</a>}
+                {project.github && !project.privateRepository && <a className="project-action" href={project.github} target="_blank" rel="noreferrer" aria-label={`${text('Source code', 'Código no GitHub')}: ${title}`}><ProjectIcon source />{text('Source code', 'Código no GitHub')}</a>}
+                {project.privateRepository && <span className="project-private"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>{text('Private repository', 'Repositório privado')}</span>}
               </div>}
             </div>
           </article>

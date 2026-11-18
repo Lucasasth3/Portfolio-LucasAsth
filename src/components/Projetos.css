@@ -31,6 +31,7 @@
 .project-showcase-stack { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 28px; list-style: none; }
 .project-showcase-stack li { padding: 6px 9px; color: var(--color-soft); background: var(--color-bg); border: 1px solid var(--color-line); font: .63rem var(--font-mono); }
 .project-showcase-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 4px; }
+.project-private { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; color: var(--color-soft); font: .7rem var(--font-mono); }
 .project-action { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 42px; padding: 10px 14px; border: 1px solid var(--color-line); color: var(--color-surface); background: transparent; text-decoration: none; font-size: .77rem; transition: border-color .2s, background .2s; }
 .project-action:hover { border-color: var(--color-soft); background: var(--color-accent-tint); }
 .project-action-primary { background: var(--color-accent); border-color: var(--color-accent); }
