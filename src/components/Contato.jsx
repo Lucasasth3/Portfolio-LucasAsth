@@ -118,7 +118,7 @@ function Contact() {
               <input name="name" autoComplete="name" required maxLength={120} />
             </label>
             <label>{text('Email', 'E-mail')}
-              <input name="email" type="email" autoComplete="email" required maxLength={254} />
+              <input name="email" type="email" autoComplete="email" spellCheck={false} required maxLength={254} />
             </label>
             <label className="contact-wide">{text('What’s it about?', 'Sobre o que é?')}
               <input name="subject" required maxLength={140} placeholder={text('e.g. A website for my business', 'Ex.: um site para minha empresa')} />

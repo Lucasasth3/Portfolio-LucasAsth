@@ -24,8 +24,9 @@ function Portfolio() {
   }, [pathname, hash, key])
   return (
     <div className="site-shell">
+      <a className="skip-link" href="#main-content">{text('Skip to content', 'Pular para o conteúdo')}</a>
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/resume" element={<ResumePage />} />
@@ -39,7 +40,10 @@ function Portfolio() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      <footer>{text("Lucas Asth · Belo Horizonte, Brazil", "Lucas Asth · Belo Horizonte, Brasil")}</footer>
+      <footer className="site-footer">
+        <span>{text("Lucas Asth · Belo Horizonte, Brazil", "Lucas Asth · Belo Horizonte, Brasil")}</span>
+        <a href="https://github.com/Lucasasth3/Portfolio-LucasAsth" target="_blank" rel="noreferrer">{text('Portfolio source code', 'Código deste portfólio')}</a>
+      </footer>
     </div>
   )
 }

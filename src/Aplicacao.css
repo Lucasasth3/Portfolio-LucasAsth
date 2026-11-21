@@ -1,3 +1,26 @@
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 12px 18px;
+  color: var(--color-surface);
+  background: var(--color-background, #171717);
+  border: 2px solid var(--color-accent, #d5575e);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
 .site-shell {
   --sidebar-width: clamp(210px, 24vw, 280px);
   --column-gap: clamp(34px, 5vw, 64px);

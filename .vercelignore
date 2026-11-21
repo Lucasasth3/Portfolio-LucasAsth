@@ -5,3 +5,4 @@ dist
 .agents
 .codex
 docs/design
+tmp
