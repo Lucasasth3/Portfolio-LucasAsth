@@ -7,6 +7,7 @@ import './PaginaInicial.css'
 import './HomeFooter.css'
 import WakaTimeActivity from '../components/WakaTimeActivity'
 import SkillsGlobe from '../components/SkillsGlobe'
+import RetratoInterativo from '../components/RetratoInterativo'
 
 export default function HomePage() {
   const { text } = useLanguage()
@@ -58,17 +59,12 @@ export default function HomePage() {
           <p className="home-about-signature">{text('Software Engineer in training · Entrepreneur at heart', 'Software Engineer em formação · Empreendedor por natureza')}</p>
         </div>
 
-        <div className="home-about-visual" tabIndex="0" aria-label={text('Hover to see the illustrated version', 'Passe o mouse para ver a versão ilustrada')}>
-          <div className="home-about-image home-about-image-photo">
-            <img src="/images/lucas.png" alt="Lucas Asth" />
-          </div>
-          <div className="home-about-image home-about-image-drawing" aria-hidden="true"><span>{text('Illustrated version', 'Versão ilustrada')}</span></div>
-          <span className="home-about-hint">{text('Hover me', 'Passe o mouse')}</span>
-        </div>
+        <RetratoInterativo />
 
         <div className="home-about-copy">
           <p>{text('I am a Software Engineering student at PUC Minas with practical experience building web applications, REST APIs and data solutions. My path started with entrepreneurship: I learned by testing ideas, talking to people and turning small opportunities into something real.', 'Sou estudante de Engenharia de Software na PUC Minas, com experiência prática construindo aplicações web, APIs REST e soluções com dados. Minha trajetória começou pelo empreendedorismo: aprendi testando ideias, conversando com pessoas e transformando pequenas oportunidades em algo real.')}</p>
           <p>{text('Today I combine that business curiosity with software engineering. I like understanding the reason behind a product, organizing the work and building a first version that can be improved with feedback.', 'Hoje uno essa curiosidade de negócio à engenharia de software. Gosto de entender o motivo por trás de um produto, organizar o trabalho e construir uma primeira versão que possa evoluir com feedback.')}</p>
+          <p>{text('My goal is to develop web applications and APIs that solve practical problems for people and businesses.', 'Meu objetivo é desenvolver aplicações web e APIs que resolvam problemas práticos de pessoas e negócios.')}</p>
           <Link className="home-space-button home-space-button-secondary" to="/experience">{text('See my experience', 'Ver minha experiência')} <span aria-hidden="true">↗</span></Link>
         </div>
       </section>
@@ -90,7 +86,7 @@ export default function HomePage() {
             <div className="home-timeline-card">
               <strong>PUC Minas</strong>
               <span>{text('Software Engineering', 'Engenharia de Software')}</span>
-              <small>{text('Feb 2026 — Dec 2029', 'Fev 2026 — Dez 2029')}</small>
+              <small>{text('Feb 2026 — Present', 'Fev 2026 — Atual')}</small>
             </div>
           </article>
 
@@ -104,7 +100,7 @@ export default function HomePage() {
             <div className="home-timeline-card">
               <strong>{text('Freelance projects', 'Projetos freelance')}</strong>
               <span>{text('Websites, APIs and automation for local businesses', 'Sites, APIs e automações para comércios locais')}</span>
-              <small>{text('Ongoing', 'Em andamento')}</small>
+              <small>{text('Oct 2025 — Present', 'Out 2025 — Atual')}</small>
             </div>
           </article>
         </div>
@@ -112,7 +108,7 @@ export default function HomePage() {
         <div className="home-achievement-grid">
           <div className="home-achievement-card"><strong>7+</strong><span>{text('projects explored', 'projetos explorados')}</span></div>
           <div className="home-achievement-card"><strong>02</strong><span>{text('certificates', 'certificados')}</span></div>
-          <div className="home-achievement-card"><strong>01</strong><span>{text('entrepreneurial mindset', 'mentalidade empreendedora')}</span></div>
+          <div className="home-achievement-card"><strong>2023</strong><span>{text('entrepreneurship since', 'empreendendo desde')}</span></div>
         </div>
       </section>
 
@@ -180,7 +176,7 @@ export default function HomePage() {
           <div>
             <a href={githubProfile} target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
             <a href={linkedInProfile} target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-            <a href="mailto:lucas.asth3@outlook.com" aria-label="E-mail">@</a>
+            <a href="mailto:lucasasth3@outlook.com" aria-label="E-mail">@</a>
           </div>
         </div>
       </footer>

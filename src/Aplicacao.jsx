@@ -1,6 +1,7 @@
 import { LanguageProvider } from './ProvedorIdioma'
 import { useLanguage } from './contextoIdioma'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import './Aplicacao.css'
 import Header from './components/Cabecalho'
 import Skills from './components/Habilidades'
@@ -16,6 +17,11 @@ import BooksPage from './pages/PaginaLivros'
 
 function Portfolio() {
   const { text } = useLanguage()
+  const { pathname, hash, key } = useLocation()
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
+    else window.scrollTo(0, 0)
+  }, [pathname, hash, key])
   return (
     <div className="site-shell">
       <Header />

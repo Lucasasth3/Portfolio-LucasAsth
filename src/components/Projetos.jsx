@@ -3,6 +3,7 @@ import { useLanguage } from '../contextoIdioma'
 import GitHubProjects from './ProjetosGitHub'
 import { githubProfile } from '../data/projetosGitHub'
 import { projects } from '../data/projetos'
+import { orderProjects, projectDate } from '../utils/projetos.js'
 import './Projetos.css'
 
 function ProjectIcon({ source = false }) {
@@ -28,10 +29,13 @@ function Projects() {
         <div><p className="projects-eyebrow">{text('Selected projects', 'Projetos selecionados')}</p><h1 id="projects-title">{text('Code in practice.', 'Código em prática.')}</h1></div>
         <div className="projects-intro-copy"><p>{text('Applications I have worked on, the ideas behind them and the tools I used to build them.', 'Aplicações em que trabalhei, as ideias por trás delas e as ferramentas que usei para construí-las.')}</p><a href={githubProfile} target="_blank" rel="noreferrer">{text('My GitHub', 'Meu GitHub')} <span aria-hidden="true">↗</span></a></div>
       </header>
-      <div className="project-showcase-list">
-        {projects.map(project => {
+      <ol className="project-showcase-list project-timeline">
+        {orderProjects(projects).map(project => {
           const title = typeof project.title === 'string' ? project.title : project.title[language]
-          return <article className="project-showcase" key={project.id} aria-labelledby={`project-${project.id}`}>
+          const date = projectDate(project.startedAt)
+          return <li className="project-timeline-item" key={project.id}>
+            <p className="project-timeline-date">{date ? <time dateTime={project.startedAt}>{new Intl.DateTimeFormat(language === 'pt' ? 'pt-BR' : 'en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(date)}</time> : text('Date to be confirmed', 'Data a confirmar')}</p>
+            <article className="project-showcase" aria-labelledby={`project-${project.id}`}>
             <ProjectCover project={project} title={title} />
             <div className="project-showcase-content">
               <p className="project-showcase-category">{project.category[language]}</p>
@@ -44,9 +48,9 @@ function Projects() {
                 {project.privateRepository && <span className="project-private"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>{text('Private repository', 'Repositório privado')}</span>}
               </div>}
             </div>
-          </article>
+          </article></li>
         })}
-      </div>
+      </ol>
       <div className="projects-more"><GitHubProjects /></div>
     </section>
   )

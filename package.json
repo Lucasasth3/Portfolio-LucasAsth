@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "node --test --test-isolation=none server/wakatime.test.js",
+    "test": "node --test --test-isolation=none",
     "sync:wakatime": "node scripts/sync-wakatime.mjs"
   },
   "dependencies": {

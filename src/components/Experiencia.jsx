@@ -15,9 +15,10 @@ const experiences = [
     description: { en: "I prepare reports and assist clients. I also help organize internal processes and automate administrative tasks.", pt: "Desenvolvo relatórios e atendo clientes. Também apoio a organização de procedimentos internos e automatizo tarefas administrativas." },
   },
   {
-    period: { en: "Ongoing", pt: "Em andamento" },
+    period: { en: "Oct 2025 — present", pt: "Out 2025 — atual" },
     role: { en: "Freelance Web Developer", pt: "Desenvolvedor web freelancer" },
     company: { en: "Client and personal projects", pt: "Projetos para clientes e iniciativas pessoais" },
+    description: { en: 'I develop websites, REST APIs and automations for local businesses, from understanding the requirements to implementing the solution.', pt: 'Desenvolvo sites, APIs REST e automações para comércios locais, do levantamento das necessidades à implementação da solução.' },
   },
 ]
 

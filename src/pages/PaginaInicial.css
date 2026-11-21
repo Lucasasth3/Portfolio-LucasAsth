@@ -185,53 +185,6 @@
 
 .home-about-visual:focus-visible { box-shadow: 0 0 0 3px var(--color-accent); }
 
-.home-about-image {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  text-align: center;
-  transition: opacity .25s ease, filter .25s ease, transform .25s ease;
-}
-
-.home-about-image span {
-  padding: 10px;
-  border: 1px dashed currentColor;
-  font: .72rem var(--font-mono);
-}
-
-.home-about-image-photo {
-  background: linear-gradient(145deg, #3a292a, #1b1718 70%);
-  color: var(--color-soft);
-  overflow: hidden;
-}
-
-.home-about-image-photo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 24%;
-}
-
-.home-about-image-drawing {
-  opacity: 0;
-  background:
-    linear-gradient(135deg, transparent 35%, rgba(213, 87, 94, .32) 36% 38%, transparent 39%),
-    repeating-linear-gradient(45deg, transparent 0 16px, rgba(230, 168, 168, .22) 17px 18px),
-    #291f20;
-  color: var(--color-accent-light);
-  filter: saturate(.7) contrast(1.2);
-  transform: scale(1.04);
-}
-
-.home-about-visual:hover .home-about-image-photo,
-.home-about-visual:focus .home-about-image-photo { opacity: 0; transform: scale(.98); }
-
-.home-about-visual:hover .home-about-image-drawing,
-.home-about-visual:focus .home-about-image-drawing { opacity: 1; transform: scale(1); }
-
 .home-about-hint {
   position: absolute;
   right: 10px;
@@ -345,8 +298,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .home-asteroid { animation: none; }
-  .home-profile-card,
-  .home-about-image { transition: none; }
+  .home-profile-card { transition: none; }
 }
 
 @media (max-width: 760px) {
