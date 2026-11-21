@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lucas Asth’s software engineering portfolio" />
     <title>Lucas Asth — Portfolio</title>
+    <script>
+      if (['localhost', '127.0.0.1'].includes(location.hostname) && location.hash.includes('figmacapture=')) {
+        const capture = document.createElement('script')
+        capture.src = 'https://mcp.figma.com/mcp/html-to-design/capture.js'
+        capture.async = true
+        document.head.appendChild(capture)
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

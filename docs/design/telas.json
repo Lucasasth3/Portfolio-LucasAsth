@@ -1,0 +1,4574 @@
+[
+  {
+    "id": "inicio",
+    "title": "Início e apresentação",
+    "route": "/",
+    "note": "Apresentação, sobre mim, formação, música e habilidades. O botão Conheça minha história leva à seção Sobre mim.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 5093,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand active"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 195,
+        "y": 723.13,
+        "w": 228.28,
+        "h": 44,
+        "href": "#about",
+        "label": "Conheça minha história ↓",
+        "type": "",
+        "className": "home-space-button home-space-button-primary"
+      },
+      {
+        "x": 433.28,
+        "y": 723.13,
+        "w": 185.17,
+        "h": 44,
+        "href": "/contact",
+        "label": "Entre em contato ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 195,
+        "y": 789.13,
+        "w": 40.13,
+        "h": 14,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 253.13,
+        "y": 789.13,
+        "w": 53.5,
+        "h": 14,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 324.63,
+        "y": 789.13,
+        "w": 60.17,
+        "h": 14,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 510.05,
+        "y": 1120.09,
+        "w": 320,
+        "h": 400,
+        "href": "",
+        "label": "Retrato de Lucas Asth. Pressione Enter para revelar ou ocultar a pixel art.",
+        "type": "button",
+        "className": "home-about-visual portrait-painter is-ready"
+      },
+      {
+        "x": 912.05,
+        "y": 1540,
+        "w": 222.55,
+        "h": 49.19,
+        "href": "/experience",
+        "label": "Ver minha experiência ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 244,
+        "y": 3076.19,
+        "w": 190.56,
+        "h": 44,
+        "href": "https://open.spotify.com",
+        "label": "Abrir meu Spotify ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 195,
+        "y": 3544.22,
+        "w": 109.08,
+        "h": 40,
+        "href": "/resume",
+        "label": "Currículo ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 314.08,
+        "y": 3544.22,
+        "w": 102.41,
+        "h": 40,
+        "href": "/projects",
+        "label": "Projetos ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 426.48,
+        "y": 3544.22,
+        "w": 122.45,
+        "h": 40,
+        "href": "/experience",
+        "label": "Experiência ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 558.94,
+        "y": 3544.22,
+        "w": 102.41,
+        "h": 40,
+        "href": "/education",
+        "label": "Formação ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 671.34,
+        "y": 3544.22,
+        "w": 95.72,
+        "h": 40,
+        "href": "/contact",
+        "label": "Contato ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 224,
+        "y": 3697.22,
+        "w": 143,
+        "h": 33,
+        "href": "",
+        "label": "Grade de linguagens",
+        "type": "button",
+        "className": "is-active"
+      },
+      {
+        "x": 375,
+        "y": 3697.22,
+        "w": 118.38,
+        "h": 33,
+        "href": "",
+        "label": "Fatias do tempo",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 501.38,
+        "y": 3697.22,
+        "w": 149.16,
+        "h": 33,
+        "href": "",
+        "label": "Globo de habilidades",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 337.84,
+        "y": 3794.22,
+        "w": 150.83,
+        "h": 17,
+        "href": "https://wakatime.com/@7f4d92b1-c8ad-4801-9b45-b3f1fc59d3af",
+        "label": "Meu perfil no WakaTime ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 1138.13,
+        "y": 4405.48,
+        "w": 77.88,
+        "h": 33,
+        "href": "",
+        "label": "Atualizar",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 663.11,
+        "y": 4830.5,
+        "w": 284.44,
+        "h": 18,
+        "href": "/",
+        "label": "Página inicial",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 663.11,
+        "y": 4858.5,
+        "w": 284.44,
+        "h": 18,
+        "href": "#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 663.11,
+        "y": 4886.5,
+        "w": 284.44,
+        "h": 18,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 663.11,
+        "y": 4914.5,
+        "w": 284.44,
+        "h": 18,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 995.55,
+        "y": 4820.5,
+        "w": 36,
+        "h": 36,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 1041.55,
+        "y": 4820.5,
+        "w": 36,
+        "h": 36,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 1087.55,
+        "y": 4820.5,
+        "w": 36,
+        "h": 36,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "E-mail",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "home-title": 227.88,
+      "about": 950,
+      "about-title": 1204.75,
+      "journey": 1709.19,
+      "journey-title": 1847.2,
+      "music": 2624.11,
+      "music-title": 2710.13,
+      "skills": 3169.19,
+      "explore-title": 3307.2,
+      "skills-tab-grade": 3697.22,
+      "skills-tab-slices": 3697.22,
+      "skills-tab-globe": 3697.22,
+      "skills-panel": 3758.22
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:2",
+      "prototypeNodeId": "9:2",
+      "status": "wireframe-importado; prototipo-pendente"
+    }
+  },
+  {
+    "id": "projetos",
+    "title": "Projetos",
+    "route": "/projects",
+    "note": "Timeline do mais antigo ao mais recente. DoAção e CalculaDOR são privados; os outros projetos oferecem acesso ao GitHub.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 3036,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 792.72,
+        "y": 353.78,
+        "w": 97.3,
+        "h": 18,
+        "href": "https://github.com/Lucasasth3",
+        "label": "Meu GitHub ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 801.56,
+        "y": 827.67,
+        "w": 156.08,
+        "h": 42,
+        "href": "https://github.com/Lucasasth3/CosmoMind",
+        "label": "Código no GitHub: CosmoMind",
+        "type": "",
+        "className": "project-action"
+      },
+      {
+        "x": 228,
+        "y": 1279.23,
+        "w": 156.08,
+        "h": 42,
+        "href": "https://github.com/Lucasasth3/Uai-Adota-",
+        "label": "Código no GitHub: Uai, Adota!",
+        "type": "",
+        "className": "project-action"
+      },
+      {
+        "x": 1118.98,
+        "y": 2428.42,
+        "w": 161.02,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3?tab=repositories",
+        "label": "Ver todos no GitHub ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2480.42,
+        "w": 163.33,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/catalogo-produtos",
+        "label": "Catálogo de Produtos",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2528.42,
+        "w": 131.33,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/Dakcabeleireiro",
+        "label": "Dak Cabeleireiros",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 1222.36,
+        "y": 2530.42,
+        "w": 57.64,
+        "h": 18,
+        "href": "https://dakcabeleireiros.vercel.app/",
+        "label": "Ver site ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2576.42,
+        "w": 35.83,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/diaw",
+        "label": "diaw",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2624.42,
+        "w": 96.75,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/finance-saas",
+        "label": "Finance SaaS",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2697.42,
+        "w": 194.19,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/lab-spring-mvc-concluido",
+        "label": "lab-spring-mvc-concluido",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2745.42,
+        "w": 53.09,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/project",
+        "label": "project",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 2793.42,
+        "w": 120.39,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/projeto-sprint-1",
+        "label": "projeto-sprint-1",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "projects-title": 200,
+      "project-cosmomind": 520.78,
+      "project-uai-adota": 1042.67,
+      "project-calculador": 1494.23,
+      "project-doacao": 1979.8,
+      "github-projects-heading": 2425.42
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:19",
+      "prototypeNodeId": "10:390",
+      "status": "wireframe-importado; prototipo-pendente"
+    }
+  },
+  {
+    "id": "experiencias",
+    "title": "Experiências",
+    "route": "/experience",
+    "note": "Cargo, instituição, período e descrição. Freelances desde outubro de 2025.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "experience": 74,
+      "experience-title": 163
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:36",
+      "prototypeNodeId": "10:407",
+      "status": "wireframe-importado; prototipo-pendente"
+    }
+  },
+  {
+    "id": "contato",
+    "title": "Contato",
+    "route": "/contact",
+    "note": "Nome, e-mail, assunto e mensagem. O envio do protótipo é simulado; o site utiliza Formspree.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 2608,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 220,
+        "y": 745.69,
+        "w": 1000,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 823.69,
+        "w": 1000,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 278,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 336,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 394,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 257,
+        "y": 1552.69,
+        "w": 148.53,
+        "h": 42,
+        "href": "",
+        "label": "Enviar mensagem",
+        "type": "submit",
+        "className": "button button-primary"
+      },
+      {
+        "x": 220,
+        "y": 1736.98,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 717.38,
+        "y": 1724.27,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 841.27,
+        "y": 1724.27,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 955.03,
+        "y": 1724.27,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 1090.3,
+        "y": 1724.27,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 257,
+        "y": 2308.02,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 173.23,
+      "contact-form-title": 1140.69,
+      "comments-title": 1883.02
+    },
+    "fields": [
+      {
+        "x": 257,
+        "y": 1228.69,
+        "w": 454,
+        "h": 44,
+        "name": "name",
+        "label": "name",
+        "type": "text",
+        "value": "",
+        "placeholder": ""
+      },
+      {
+        "x": 729,
+        "y": 1228.69,
+        "w": 454,
+        "h": 44,
+        "name": "email",
+        "label": "email",
+        "type": "email",
+        "value": "",
+        "placeholder": ""
+      },
+      {
+        "x": 257,
+        "y": 1317.69,
+        "w": 926,
+        "h": 44,
+        "name": "subject",
+        "label": "subject",
+        "type": "text",
+        "value": "",
+        "placeholder": "Ex.: um site para minha empresa"
+      },
+      {
+        "x": 257,
+        "y": 1406.69,
+        "w": 926,
+        "h": 124,
+        "name": "message",
+        "label": "message",
+        "type": "textarea",
+        "value": "",
+        "placeholder": "Do que você precisa e para quando?"
+      }
+    ],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:53",
+      "prototypeNodeId": "10:424",
+      "status": "wireframe-importado; prototipo-pendente"
+    }
+  },
+  {
+    "id": "livros",
+    "title": "Livros",
+    "route": "/books",
+    "note": "Catálogo de 54 livros com capas, avaliações, busca e categorias.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 8675,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "books-title": 217
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:70",
+      "prototypeNodeId": "10:441",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "curriculo",
+    "title": "Currículo",
+    "route": "/resume",
+    "note": "Prévia do currículo e ação para baixar o PDF.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 1497,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1117.94,
+        "y": 108,
+        "w": 162.06,
+        "h": 42,
+        "href": "/curriculo-lucas-asth.pdf",
+        "label": "Baixar currículo PDF",
+        "type": "",
+        "className": "button button-primary resume-download"
+      },
+      {
+        "x": 721.38,
+        "y": 1318.83,
+        "w": 149.03,
+        "h": 18,
+        "href": "/curriculo-lucas-asth.pdf",
+        "label": "baixe o currículo em PDF",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:87",
+      "prototypeNodeId": "10:458",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "formacao",
+    "title": "Formação",
+    "route": "/education",
+    "note": "Engenharia de Software na PUC Minas desde fevereiro de 2026, certificações e acesso às notas.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 539,
+        "y": 301.25,
+        "w": 159.67,
+        "h": 42,
+        "href": "/education/grades",
+        "label": "Ver minhas notas →",
+        "type": "",
+        "className": "button button-secondary education-record-link"
+      },
+      {
+        "x": 539,
+        "y": 491.23,
+        "w": 234.27,
+        "h": 42,
+        "href": "https://www.linkedin.com/in/lucas-asth/details/certifications/",
+        "label": "Ver certificações no LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary education-record-link"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "education": 74,
+      "education-title": 163
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:104",
+      "prototypeNodeId": "10:475",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "historico",
+    "title": "Histórico acadêmico",
+    "route": "/education/grades",
+    "note": "Disciplinas, notas, frequência e resumo de cada semestre.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 1679,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 160,
+        "y": 108,
+        "w": 152.95,
+        "h": 19,
+        "href": "/education",
+        "label": "← Voltar para Formação",
+        "type": "",
+        "className": "academic-back"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "grades-progress": 359.61,
+      "semester-2026-1": 432.61,
+      "semester-2026-2": 987.61,
+      "semester-2027-1": 987.61,
+      "semester-2027-2": 1133.22,
+      "semester-2028-1": 1133.22,
+      "semester-2028-2": 1278.83,
+      "semester-2029-1": 1278.83,
+      "semester-2029-2": 1424.44
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:121",
+      "prototypeNodeId": "10:492",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "habilidades",
+    "title": "Habilidades",
+    "route": "/skills",
+    "note": "Tecnologias e conhecimentos organizados por área.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "skills": 74,
+      "skills-title": 163
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:138",
+      "prototypeNodeId": "10:509",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "contato-enviado",
+    "title": "Contato — mensagem enviada",
+    "route": "/contact",
+    "state": "success",
+    "note": "Estado de confirmação. Enviar outra mensagem retorna ao formulário inicial.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 2351,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 220,
+        "y": 745.69,
+        "w": 1000,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 823.69,
+        "w": 1000,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 278,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 336,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 394,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 626.17,
+        "y": 1317.88,
+        "w": 187.64,
+        "h": 42,
+        "href": "",
+        "label": "Enviar outra mensagem",
+        "type": "button",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 220,
+        "y": 1479.92,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 717.38,
+        "y": 1467.2,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 841.27,
+        "y": 1467.2,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 955.03,
+        "y": 1467.2,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 1090.3,
+        "y": 1467.2,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 257,
+        "y": 2050.95,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 173.23,
+      "comments-title": 1625.95
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:155",
+      "prototypeNodeId": "10:526",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "contato-erro",
+    "title": "Contato — falha no envio",
+    "route": "/contact",
+    "state": "error",
+    "note": "Erro preserva os dados digitados e oferece contato direto por e-mail.",
+    "device": "desktop",
+    "width": 1440,
+    "height": 2608,
+    "hotspots": [
+      {
+        "x": 179,
+        "y": 34.5,
+        "w": 79.75,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 442.73,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 510.03,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 599.97,
+        "y": 35,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 689.91,
+        "y": 35,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 772.3,
+        "y": 35,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 884.88,
+        "y": 35,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 952.17,
+        "y": 35,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 1192,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 1228,
+        "y": 29,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 220,
+        "y": 745.69,
+        "w": 1000,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 823.69,
+        "w": 1000,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 220,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 278,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 336,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 394,
+        "y": 981.69,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 257,
+        "y": 1552.69,
+        "w": 148.53,
+        "h": 42,
+        "href": "",
+        "label": "Enviar mensagem",
+        "type": "submit",
+        "className": "button button-primary"
+      },
+      {
+        "x": 707.63,
+        "y": 1603.69,
+        "w": 150.47,
+        "h": 18,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 220,
+        "y": 1736.98,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 717.38,
+        "y": 1724.27,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 841.27,
+        "y": 1724.27,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 955.03,
+        "y": 1724.27,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 1090.3,
+        "y": 1724.27,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 257,
+        "y": 2308.02,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 173.23,
+      "contact-form-title": 1140.69,
+      "comments-title": 1883.02
+    },
+    "fields": [
+      {
+        "x": 257,
+        "y": 1228.69,
+        "w": 454,
+        "h": 44,
+        "name": "name",
+        "label": "name",
+        "type": "text",
+        "value": "Visitante do portfólio",
+        "placeholder": ""
+      },
+      {
+        "x": 729,
+        "y": 1228.69,
+        "w": 454,
+        "h": 44,
+        "name": "email",
+        "label": "email",
+        "type": "email",
+        "value": "visitante@example.com",
+        "placeholder": ""
+      },
+      {
+        "x": 257,
+        "y": 1317.69,
+        "w": 926,
+        "h": 44,
+        "name": "subject",
+        "label": "subject",
+        "type": "text",
+        "value": "Um novo projeto",
+        "placeholder": "Ex.: um site para minha empresa"
+      },
+      {
+        "x": 257,
+        "y": 1406.69,
+        "w": 926,
+        "h": 124,
+        "name": "message",
+        "label": "message",
+        "type": "textarea",
+        "value": "Gostaria de conversar sobre uma aplicação web.",
+        "placeholder": "Do que você precisa e para quando?"
+      }
+    ],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:172",
+      "prototypeNodeId": "10:543",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "inicio",
+    "title": "Início e apresentação",
+    "route": "/",
+    "note": "Apresentação, sobre mim, formação, música e habilidades. O botão Conheça minha história leva à seção Sobre mim.",
+    "device": "mobile",
+    "width": 390,
+    "height": 7917,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand active"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 564.23,
+        "w": 228.28,
+        "h": 44,
+        "href": "#about",
+        "label": "Conheça minha história ↓",
+        "type": "",
+        "className": "home-space-button home-space-button-primary"
+      },
+      {
+        "x": 24,
+        "y": 618.23,
+        "w": 185.17,
+        "h": 44,
+        "href": "/contact",
+        "label": "Entre em contato ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 24,
+        "y": 684.23,
+        "w": 40.13,
+        "h": 14,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 82.13,
+        "y": 684.23,
+        "w": 53.5,
+        "h": 14,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 153.63,
+        "y": 684.23,
+        "w": 60.17,
+        "h": 14,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 45,
+        "y": 1543.55,
+        "w": 300,
+        "h": 375,
+        "href": "",
+        "label": "Retrato de Lucas Asth. Pressione Enter para revelar ou ocultar a pixel art.",
+        "type": "button",
+        "className": "home-about-visual portrait-painter is-ready"
+      },
+      {
+        "x": 24,
+        "y": 2408.36,
+        "w": 222.55,
+        "h": 49.19,
+        "href": "/experience",
+        "label": "Ver minha experiência ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 53,
+        "y": 4399.77,
+        "w": 190.56,
+        "h": 44,
+        "href": "https://open.spotify.com",
+        "label": "Abrir meu Spotify ↗",
+        "type": "",
+        "className": "home-space-button home-space-button-secondary"
+      },
+      {
+        "x": 24,
+        "y": 5119.06,
+        "w": 109.08,
+        "h": 40,
+        "href": "/resume",
+        "label": "Currículo ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 143.08,
+        "y": 5119.06,
+        "w": 102.41,
+        "h": 40,
+        "href": "/projects",
+        "label": "Projetos ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 5169.06,
+        "w": 122.45,
+        "h": 40,
+        "href": "/experience",
+        "label": "Experiência ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 156.45,
+        "y": 5169.06,
+        "w": 102.41,
+        "h": 40,
+        "href": "/education",
+        "label": "Formação ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 268.86,
+        "y": 5169.06,
+        "w": 95.72,
+        "h": 40,
+        "href": "/contact",
+        "label": "Contato ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 47,
+        "y": 5335.06,
+        "w": 143,
+        "h": 33,
+        "href": "",
+        "label": "Grade de linguagens",
+        "type": "button",
+        "className": "is-active"
+      },
+      {
+        "x": 198,
+        "y": 5335.06,
+        "w": 118.38,
+        "h": 33,
+        "href": "",
+        "label": "Fatias do tempo",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 47,
+        "y": 5376.06,
+        "w": 149.16,
+        "h": 33,
+        "href": "",
+        "label": "Globo de habilidades",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 160.84,
+        "y": 5472.06,
+        "w": 150.83,
+        "h": 17,
+        "href": "https://wakatime.com/@7f4d92b1-c8ad-4801-9b45-b3f1fc59d3af",
+        "label": "Meu perfil no WakaTime ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 265.13,
+        "y": 7016.59,
+        "w": 77.88,
+        "h": 33,
+        "href": "",
+        "label": "Atualizar",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 7555.31,
+        "w": 342,
+        "h": 18,
+        "href": "/",
+        "label": "Página inicial",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 7583.31,
+        "w": 342,
+        "h": 18,
+        "href": "#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 7611.31,
+        "w": 342,
+        "h": 18,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 7639.31,
+        "w": 342,
+        "h": 18,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 24,
+        "y": 7721.31,
+        "w": 36,
+        "h": 36,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 70,
+        "y": 7721.31,
+        "w": 36,
+        "h": 36,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 116,
+        "y": 7721.31,
+        "w": 36,
+        "h": 36,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "E-mail",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "home-title": 248.02,
+      "about": 1298.23,
+      "about-title": 1406.25,
+      "journey": 2577.55,
+      "journey-title": 2685.56,
+      "music": 4054.06,
+      "music-title": 4120.08,
+      "skills": 4868.77,
+      "explore-title": 4976.78,
+      "skills-tab-grade": 5335.06,
+      "skills-tab-slices": 5335.06,
+      "skills-tab-globe": 5376.06,
+      "skills-panel": 5437.06
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:189",
+      "prototypeNodeId": "10:560",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "projetos",
+    "title": "Projetos",
+    "route": "/projects",
+    "note": "Timeline do mais antigo ao mais recente. DoAção e CalculaDOR são privados; os outros projetos oferecem acesso ao GitHub.",
+    "device": "mobile",
+    "width": 390,
+    "height": 3863,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 423.19,
+        "w": 97.3,
+        "h": 18,
+        "href": "https://github.com/Lucasasth3",
+        "label": "Meu GitHub ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 64,
+        "y": 1079.52,
+        "w": 156.08,
+        "h": 42,
+        "href": "https://github.com/Lucasasth3/CosmoMind",
+        "label": "Código no GitHub: CosmoMind",
+        "type": "",
+        "className": "project-action"
+      },
+      {
+        "x": 64,
+        "y": 1737.22,
+        "w": 156.08,
+        "h": 42,
+        "href": "https://github.com/Lucasasth3/Uai-Adota-",
+        "label": "Código no GitHub: Uai, Adota!",
+        "type": "",
+        "className": "project-action"
+      },
+      {
+        "x": 20,
+        "y": 3278.22,
+        "w": 161.02,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3?tab=repositories",
+        "label": "Ver todos no GitHub ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3329.22,
+        "w": 163.33,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/catalogo-produtos",
+        "label": "Catálogo de Produtos",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3377.22,
+        "w": 131.33,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/Dakcabeleireiro",
+        "label": "Dak Cabeleireiros",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 312.36,
+        "y": 3379.22,
+        "w": 57.64,
+        "h": 18,
+        "href": "https://dakcabeleireiros.vercel.app/",
+        "label": "Ver site ↗",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3425.22,
+        "w": 35.83,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/diaw",
+        "label": "diaw",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3473.22,
+        "w": 96.75,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/finance-saas",
+        "label": "Finance SaaS",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3572.22,
+        "w": 194.19,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/lab-spring-mvc-concluido",
+        "label": "lab-spring-mvc-concluido",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3620.22,
+        "w": 53.09,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/project",
+        "label": "project",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 3668.22,
+        "w": 120.39,
+        "h": 21,
+        "href": "https://github.com/Lucasasth3/projeto-sprint-1",
+        "label": "projeto-sprint-1",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "projects-title": 209,
+      "project-cosmomind": 833.94,
+      "project-uai-adota": 1457.64,
+      "project-calculador": 2118.88,
+      "project-doacao": 2776.58,
+      "github-projects-heading": 3245.22
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:206",
+      "prototypeNodeId": "10:577",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "experiencias",
+    "title": "Experiências",
+    "route": "/experience",
+    "note": "Cargo, instituição, período e descrição. Freelances desde outubro de 2025.",
+    "device": "mobile",
+    "width": 390,
+    "height": 1019,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "experience": 131,
+      "experience-title": 199
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:223",
+      "prototypeNodeId": "10:594",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "contato",
+    "title": "Contato",
+    "route": "/contact",
+    "note": "Nome, e-mail, assunto e mensagem. O envio do protótipo é simulado; o site utiliza Formspree.",
+    "device": "mobile",
+    "width": 390,
+    "height": 2780,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 771.03,
+        "w": 350,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 849.03,
+        "w": 350,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 78,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 136,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 194,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 39,
+        "y": 1659.03,
+        "w": 148.53,
+        "h": 42,
+        "href": "",
+        "label": "Enviar mensagem",
+        "type": "submit",
+        "className": "button button-primary"
+      },
+      {
+        "x": 20,
+        "y": 1825.33,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 20,
+        "y": 1893.13,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 143.89,
+        "y": 1893.13,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 20,
+        "y": 1949.13,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 155.27,
+        "y": 1949.13,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 41,
+        "y": 2536.36,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 190.23,
+      "contact-form-title": 1167.03,
+      "comments-title": 2077.36
+    },
+    "fields": [
+      {
+        "x": 39,
+        "y": 1246.03,
+        "w": 312,
+        "h": 44,
+        "name": "name",
+        "label": "name",
+        "type": "text",
+        "value": "",
+        "placeholder": ""
+      },
+      {
+        "x": 39,
+        "y": 1335.03,
+        "w": 312,
+        "h": 44,
+        "name": "email",
+        "label": "email",
+        "type": "email",
+        "value": "",
+        "placeholder": ""
+      },
+      {
+        "x": 39,
+        "y": 1424.03,
+        "w": 312,
+        "h": 44,
+        "name": "subject",
+        "label": "subject",
+        "type": "text",
+        "value": "",
+        "placeholder": "Ex.: um site para minha empresa"
+      },
+      {
+        "x": 39,
+        "y": 1513.03,
+        "w": 312,
+        "h": 124,
+        "name": "message",
+        "label": "message",
+        "type": "textarea",
+        "value": "",
+        "placeholder": "Do que você precisa e para quando?"
+      }
+    ],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:240",
+      "prototypeNodeId": "10:611",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "livros",
+    "title": "Livros",
+    "route": "/books",
+    "note": "Catálogo de 54 livros com capas, avaliações, busca e categorias.",
+    "device": "mobile",
+    "width": 390,
+    "height": 12404,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "books-title": 224
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:257",
+      "prototypeNodeId": "10:628",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "curriculo",
+    "title": "Currículo",
+    "route": "/resume",
+    "note": "Prévia do currículo e ação para baixar o PDF.",
+    "device": "mobile",
+    "width": 390,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 207.94,
+        "y": 165,
+        "w": 162.06,
+        "h": 42,
+        "href": "/curriculo-lucas-asth.pdf",
+        "label": "Baixar currículo PDF",
+        "type": "",
+        "className": "button button-primary resume-download"
+      },
+      {
+        "x": 196.38,
+        "y": 715.89,
+        "w": 149.03,
+        "h": 18,
+        "href": "/curriculo-lucas-asth.pdf",
+        "label": "baixe o currículo em PDF",
+        "type": "",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:274",
+      "prototypeNodeId": "10:645",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "formacao",
+    "title": "Formação",
+    "route": "/education",
+    "note": "Engenharia de Software na PUC Minas desde fevereiro de 2026, certificações e acesso às notas.",
+    "device": "mobile",
+    "width": 390,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 55,
+        "y": 548.17,
+        "w": 159.67,
+        "h": 42,
+        "href": "/education/grades",
+        "label": "Ver minhas notas →",
+        "type": "",
+        "className": "button button-secondary education-record-link"
+      },
+      {
+        "x": 55,
+        "y": 758.16,
+        "w": 234.27,
+        "h": 42,
+        "href": "https://www.linkedin.com/in/lucas-asth/details/certifications/",
+        "label": "Ver certificações no LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary education-record-link"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "education": 131,
+      "education-title": 199
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:291",
+      "prototypeNodeId": "10:662",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "historico",
+    "title": "Histórico acadêmico",
+    "route": "/education/grades",
+    "note": "Disciplinas, notas, frequência e resumo de cada semestre.",
+    "device": "mobile",
+    "width": 390,
+    "height": 2131,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 165,
+        "w": 152.95,
+        "h": 19,
+        "href": "/education",
+        "label": "← Voltar para Formação",
+        "type": "",
+        "className": "academic-back"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "grades-progress": 421.81,
+      "semester-2026-1": 482.81,
+      "semester-2026-2": 1049.89,
+      "semester-2027-1": 1187.11,
+      "semester-2027-2": 1324.33,
+      "semester-2028-1": 1461.55,
+      "semester-2028-2": 1598.77,
+      "semester-2029-1": 1735.98,
+      "semester-2029-2": 1873.2
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:308",
+      "prototypeNodeId": "10:679",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "habilidades",
+    "title": "Habilidades",
+    "route": "/skills",
+    "note": "Tecnologias e conhecimentos organizados por área.",
+    "device": "mobile",
+    "width": 390,
+    "height": 976,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "skills": 131,
+      "skills-title": 199
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:325",
+      "prototypeNodeId": "10:696",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "contato-enviado",
+    "title": "Contato — mensagem enviada",
+    "route": "/contact",
+    "state": "success",
+    "note": "Estado de confirmação. Enviar outra mensagem retorna ao formulário inicial.",
+    "device": "mobile",
+    "width": 390,
+    "height": 2479,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 771.03,
+        "w": 350,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 849.03,
+        "w": 350,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 78,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 136,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 194,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 101.17,
+        "y": 1368.89,
+        "w": 187.64,
+        "h": 42,
+        "href": "",
+        "label": "Enviar outra mensagem",
+        "type": "button",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 20,
+        "y": 1524.27,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 20,
+        "y": 1592.06,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 143.89,
+        "y": 1592.06,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 20,
+        "y": 1648.06,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 155.27,
+        "y": 1648.06,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 41,
+        "y": 2235.3,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 190.23,
+      "comments-title": 1776.3
+    },
+    "fields": [],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:342",
+      "prototypeNodeId": "10:713",
+      "status": "montagem-pendente"
+    }
+  },
+  {
+    "id": "contato-erro",
+    "title": "Contato — falha no envio",
+    "route": "/contact",
+    "state": "error",
+    "note": "Erro preserva os dados digitados e oferece contato direto por e-mail.",
+    "device": "mobile",
+    "width": 390,
+    "height": 2801,
+    "hotspots": [
+      {
+        "x": 39,
+        "y": 33.5,
+        "w": 228,
+        "h": 21,
+        "href": "/",
+        "label": "Lucas Asth",
+        "type": "",
+        "className": "brand"
+      },
+      {
+        "x": 39,
+        "y": 75,
+        "w": 45.3,
+        "h": 20,
+        "href": "/",
+        "label": "Início",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 98.3,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/#about",
+        "label": "Sobre mim",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 180.23,
+        "y": 75,
+        "w": 67.94,
+        "h": 20,
+        "href": "/resume",
+        "label": "Currículo",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 262.17,
+        "y": 75,
+        "w": 60.39,
+        "h": 20,
+        "href": "/projects",
+        "label": "Projetos",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 39,
+        "y": 102,
+        "w": 90.58,
+        "h": 20,
+        "href": "/experience",
+        "label": "Experiências",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 143.58,
+        "y": 102,
+        "w": 45.3,
+        "h": 20,
+        "href": "/books",
+        "label": "Livros",
+        "type": "",
+        "className": "nav-link"
+      },
+      {
+        "x": 202.88,
+        "y": 102,
+        "w": 52.84,
+        "h": 20,
+        "href": "/contact",
+        "label": "Contato",
+        "type": "",
+        "className": "nav-link active"
+      },
+      {
+        "x": 282,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "English",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 318,
+        "y": 28,
+        "w": 34,
+        "h": 32,
+        "href": "",
+        "label": "Português",
+        "type": "button",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 771.03,
+        "w": 350,
+        "h": 68,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "✉E-MAILlucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 849.03,
+        "w": 350,
+        "h": 68,
+        "href": "https://wa.me/5531971019524",
+        "label": "WHATSAPPConverse comigo",
+        "type": "",
+        "className": "contact-info-card"
+      },
+      {
+        "x": 20,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 78,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 136,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 194,
+        "y": 1007.03,
+        "w": 48,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 39,
+        "y": 1659.03,
+        "w": 148.53,
+        "h": 42,
+        "href": "",
+        "label": "Enviar mensagem",
+        "type": "submit",
+        "className": "button button-primary"
+      },
+      {
+        "x": 182.16,
+        "y": 1731.09,
+        "w": 150.47,
+        "h": 18,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": ""
+      },
+      {
+        "x": 20,
+        "y": 1846.39,
+        "w": 189.38,
+        "h": 21,
+        "href": "mailto:lucasasth3@outlook.com",
+        "label": "lucasasth3@outlook.com",
+        "type": "",
+        "className": "contact-email"
+      },
+      {
+        "x": 20,
+        "y": 1914.19,
+        "w": 115.89,
+        "h": 48,
+        "href": "https://www.linkedin.com/in/lucas-asth/",
+        "label": "LinkedIn ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 143.89,
+        "y": 1914.19,
+        "w": 105.77,
+        "h": 48,
+        "href": "https://github.com/Lucasasth3",
+        "label": "GitHub ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 20,
+        "y": 1970.19,
+        "w": 127.27,
+        "h": 48,
+        "href": "https://www.instagram.com/lucasasth/",
+        "label": "Instagram ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 155.27,
+        "y": 1970.19,
+        "w": 129.7,
+        "h": 48,
+        "href": "https://wa.me/5531971019524",
+        "label": "WhatsApp ↗",
+        "type": "",
+        "className": "button button-secondary"
+      },
+      {
+        "x": 41,
+        "y": 2557.42,
+        "w": 207.22,
+        "h": 42,
+        "href": "",
+        "label": "Deixar uma recomendação",
+        "type": "submit",
+        "className": "button button-primary"
+      }
+    ],
+    "anchors": {
+      "root": 16,
+      "contact-title": 190.23,
+      "contact-form-title": 1167.03,
+      "comments-title": 2098.42
+    },
+    "fields": [
+      {
+        "x": 39,
+        "y": 1246.03,
+        "w": 312,
+        "h": 44,
+        "name": "name",
+        "label": "name",
+        "type": "text",
+        "value": "Visitante do portfólio",
+        "placeholder": ""
+      },
+      {
+        "x": 39,
+        "y": 1335.03,
+        "w": 312,
+        "h": 44,
+        "name": "email",
+        "label": "email",
+        "type": "email",
+        "value": "visitante@example.com",
+        "placeholder": ""
+      },
+      {
+        "x": 39,
+        "y": 1424.03,
+        "w": 312,
+        "h": 44,
+        "name": "subject",
+        "label": "subject",
+        "type": "text",
+        "value": "Um novo projeto",
+        "placeholder": "Ex.: um site para minha empresa"
+      },
+      {
+        "x": 39,
+        "y": 1513.03,
+        "w": 312,
+        "h": 124,
+        "name": "message",
+        "label": "message",
+        "type": "textarea",
+        "value": "Gostaria de conversar sobre uma aplicação web.",
+        "placeholder": "Do que você precisa e para quando?"
+      }
+    ],
+    "figma": {
+      "fileKey": "J9LBsBqbds5wn447Rqflyo",
+      "wireframeNodeId": "10:359",
+      "prototypeNodeId": "10:730",
+      "status": "montagem-pendente"
+    }
+  }
+]

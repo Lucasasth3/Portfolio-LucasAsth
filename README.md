@@ -3,7 +3,8 @@
 Portfólio profissional em React e Vite com formação, experiências, projetos, leituras e atividade de programação. Conteúdo disponível em português e inglês.
 
 - **Site publicado:** [portfolio-lucasasth.vercel.app](https://portfolio-lucasasth.vercel.app).
-- **Figma e wireframes:** adicionar o link do protótipo.
+- **Wireframes e protótipos locais:** [abrir a documentação visual](docs/design/index.html).
+- **Arquivo no Figma:** [Lucas Asth — Portfólio profissional](https://www.figma.com/design/J9LBsBqbds5wn447Rqflyo/Lucas-Asth-%E2%80%94-Portf%C3%B3lio-profissional) — importação das telas e conexões do protótipo pendentes.
 - **Autor:** [Lucas Asth](https://github.com/Lucasasth3).
 
 ## Funcionalidades
@@ -119,6 +120,14 @@ npx vercel --prod
 
 Os arquivos `.env*` não são enviados no deploy. Configure as variáveis pelo painel da Vercel; o token de leitura do WakaTime deve permanecer como segredo do servidor. O domínio personalizado desejado é `lucasasth.dev`, cuja configuração ainda depende do registro e do DNS.
 
-## Créditos
+## Wireframes e protótipos
+
+O diretório `docs/design` contém 22 wireframes de média fidelidade e 22 telas visuais em SVG: 11 páginas e estados nas versões desktop (1440 px) e mobile (390 px). Inclui mapa de navegação, referência de estilos e uma prévia navegável em `index.html`, que funciona diretamente no navegador, sem servidor.
+
+Os SVGs mantêm formas e textos vetoriais, com fotografias e capas incorporadas. A prévia permite navegar entre páginas e simular o fluxo de sucesso do formulário; não envia mensagens. O estado de erro também está disponível no menu de telas. Animações, busca de livros e serviços externos são documentados como referências estáticas.
+
+O material documenta o site existente em 21 de novembro de 2026. O arquivo no Figma está indicado no início deste README. A montagem foi iniciada, com páginas organizadas, cabeçalhos reutilizáveis, cores e os quatro wireframes desktop principais em camadas editáveis. As demais telas e as conexões de protótipo estão pendentes devido ao limite de chamadas MCP do plano Starter da equipe. Os vínculos foram preservados em `docs/design/telas.json`; a prévia local funciona independentemente desse limite. As instruções estão em `docs/design/LEIA-ME.txt`.
+
+## Créditos dos recursos visuais
 
 Os ícones em `public/icons` vêm do [Devicon](https://github.com/devicons/devicon), sob licença MIT.
