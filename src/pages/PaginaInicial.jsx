@@ -8,6 +8,7 @@ import './HomeFooter.css'
 import WakaTimeActivity from '../components/WakaTimeActivity'
 import SkillsGlobe from '../components/SkillsGlobe'
 import RetratoInterativo from '../components/RetratoInterativo'
+import SocialLogo from '../components/LogoSocial'
 
 export default function HomePage() {
   const { text } = useLanguage()
@@ -62,9 +63,11 @@ export default function HomePage() {
         <RetratoInterativo />
 
         <div className="home-about-copy">
-          <p>{text('I am a Software Engineering student at PUC Minas with practical experience building web applications, REST APIs and data solutions. My path started with entrepreneurship: I learned by testing ideas, talking to people and turning small opportunities into something real.', 'Sou estudante de Engenharia de Software na PUC Minas, com experiência prática construindo aplicações web, APIs REST e soluções com dados. Minha trajetória começou pelo empreendedorismo: aprendi testando ideias, conversando com pessoas e transformando pequenas oportunidades em algo real.')}</p>
-          <p>{text('Today I combine that business curiosity with software engineering. I like understanding the reason behind a product, organizing the work and building a first version that can be improved with feedback.', 'Hoje uno essa curiosidade de negócio à engenharia de software. Gosto de entender o motivo por trás de um produto, organizar o trabalho e construir uma primeira versão que possa evoluir com feedback.')}</p>
-          <p>{text('My goal is to develop web applications and APIs that solve practical problems for people and businesses.', 'Meu objetivo é desenvolver aplicações web e APIs que resolvam problemas práticos de pessoas e negócios.')}</p>
+          <p>{text('I am a Software Engineering student at ', 'Sou estudante de Engenharia de Software na ')}<strong>PUC Minas</strong>{text(', based in Belo Horizonte, Brazil. I build web applications, REST APIs and automations, with an interest in both how a system works and how people use it in their daily lives.', ', em Belo Horizonte. Desenvolvo aplicações web, APIs REST e automações, com interesse tanto no funcionamento dos sistemas quanto na forma como as pessoas os utilizam no dia a dia.')}</p>
+          <p>{text('I have been exploring entrepreneurship since ', 'Minha relação com o empreendedorismo começou em ')}<strong>2023</strong>{text('. Testing ideas, talking to clients and negotiating taught me to look at a business before proposing a solution. That experience shapes how I approach development: I want to understand the problem, who faces it and what needs to change.', '. Testar ideias, conversar com clientes e negociar me ensinou a olhar para o negócio antes de propor uma solução. Levo essa experiência para o desenvolvimento: gosto de entender o problema, quem convive com ele e o que precisa mudar.')}</p>
+          <p>{text('At ', 'Na ')}<strong>Axel Mendes Assessoria</strong>{text(', I work with the ', ', trabalho com a ')}<strong>{text('official WhatsApp API and CRM solutions for clients', 'API oficial do WhatsApp e soluções de CRM para clientes')}</strong>{text('. I also lead client meetings to explain proposals, answer questions and guide contract signing. This combination of technical work and direct client contact has strengthened my communication and relationship-building skills. I value listening carefully, explaining solutions clearly and building trust throughout the process.', '. Também conduzo reuniões para apresentar propostas, esclarecer dúvidas e acompanhar a assinatura de contratos. Essa combinação de atuação técnica e contato direto com clientes fortalece minha comunicação e minha capacidade de construir relacionamentos. Valorizo a escuta, a clareza ao explicar soluções e a confiança em cada etapa do atendimento.')}</p>
+          <p>{text('Since October 2025, I have also worked on ', 'Desde outubro de 2025, também desenvolvo ')}<strong>{text('freelance websites, APIs and automations', 'sites, APIs e automações como freelancer')}</strong>{text(' for local businesses. I like following a project from the initial conversation through implementation, listening to feedback and adjusting what was built to the client’s needs.', ' para comércios locais. Gosto de acompanhar o projeto desde a conversa inicial até a implementação, ouvir o retorno de quem usa e ajustar o que foi construído às necessidades do cliente.')}</p>
+          <p>{text('My academic projects include ', 'Nos projetos acadêmicos, participei do ')}<strong>Uai, Adota!</strong>{text(' and ', ' e do ')}<strong>DoAção</strong>{text(', focused on pet adoption and blood donation. I also worked on CalculaDOR, a business management system, and CosmoMind, an educational game in Python. These projects have given me practice with interfaces, data and teamwork. I want to keep building that experience and take part in developing products from the first idea through the improvements that follow their release.', ', voltados à adoção de animais e à doação de sangue. Também trabalhei no CalculaDOR, um sistema de gestão comercial, e no CosmoMind, um jogo educativo em Python. São experiências que me permitem praticar interfaces, dados e trabalho em equipe. Quero continuar aprofundando essa base e participar da construção de produtos, da primeira ideia às melhorias depois da entrega.')}</p>
           <Link className="home-space-button home-space-button-secondary" to="/experience">{text('See my experience', 'Ver minha experiência')} <span aria-hidden="true">↗</span></Link>
         </div>
       </section>
@@ -174,9 +177,9 @@ export default function HomePage() {
         <div className="home-footer-socials">
           <h3>CONECTADO</h3>
           <div>
-            <a href={githubProfile} target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
-            <a href={linkedInProfile} target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-            <a href="mailto:lucasasth3@outlook.com" aria-label="E-mail">@</a>
+            <a href={githubProfile} target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><SocialLogo name="GitHub" /></a>
+            <a href={linkedInProfile} target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><SocialLogo name="LinkedIn" /></a>
+            <a href="mailto:lucasasth3@outlook.com" aria-label="E-mail" title="E-mail"><SocialLogo name="Email" /></a>
           </div>
         </div>
       </footer>

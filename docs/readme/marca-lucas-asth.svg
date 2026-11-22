@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Lucas Asth — monograma LA</title>
+  <rect width="160" height="160" rx="20" fill="#222223"/>
+  <rect x="12" y="12" width="136" height="136" rx="12" fill="#422426" stroke="#d5575e" stroke-width="2"/>
+  <text x="80" y="99" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700" text-anchor="middle">LA</text>
+</svg>

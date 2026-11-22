@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useLanguage } from '../contextoIdioma'
 import { socialLinks } from '../data/perfil'
 import ContactCall from './LigacaoContato'
+import SocialLogo from './LogoSocial'
 import './Contato.css'
 import { getWhatsAppLink, sendContact } from '../services/contato.js'
 
@@ -108,7 +109,7 @@ function Contact() {
             {whatsappUrl && <a className="contact-info-card" href={whatsappUrl} target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z" /><path d="M8 7c0 5 4 9 9 9l1-3-3-1-1 1c-1.5-.6-2.4-1.5-3-3l1-1-1-3-3 1Z" /></svg><div><small>WHATSAPP</small><strong>{text('Start a conversation', 'Converse comigo')}</strong></div></a>}
             <div className="contact-info-card"><span aria-hidden="true">⌖</span><div><small>{text('LOCATION', 'LOCALIZAÇÃO')}</small><strong>{text('Belo Horizonte, Brazil', 'Belo Horizonte, Brasil')}</strong></div></div>
             <div className="contact-info-socials">
-              {contactLinks.map(({ label, href }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>{label.slice(0, 2)}</a>)}
+              {contactLinks.map(({ label, href }) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} title={label}><SocialLogo name={label} /></a>)}
             </div>
             <p className="contact-response-note">{text('Feel free to write in English or Portuguese. I usually reply within one day.', 'Fique à vontade para escrever em inglês ou português. Normalmente respondo em um dia.')}</p>
           </aside>
